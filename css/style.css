@@ -84,7 +84,15 @@ nav a:hover {
 .nuestras__instalaciones span {
     display: block;
     ;
-  }
+}
+.carouselExampleIndicators{
+
+    height: 400px;
+}
+.carousel-control-next-icont{
+    background-color: aqua;
+}
+
 
 @media only screen and (max-width: 480px) {
     header {

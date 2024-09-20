@@ -1,62 +1,48 @@
-main{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:"Contactanos Contactanos" 
-                        "formulario direccion";
-       
-                         
+body {
+  background-color: rgb(255, 255, 255);
 }
-.contactFormPadre{
-    min-height: 100vh;
-    column-gap: 5%;
-    row-gap: 5%;
+.container {
+  max-width: 1200px;
 }
 
-.Contactanos{
-    grid-area: Contactanos;
-    align-content: center;
-    text-align: center;
-    font-size: 60px;
-    
+.contact-form,
+.contact-info {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(1, 0, 0, 0.2);
+  padding: 20px;
+  margin: 0px;
 }
 
-.info-local {
-    display: flex;
-    flex-direction: column;
-    
+h2 {
+  margin-bottom: 20px;
+  color: rgb(44, 62, 80); /* Azul Marino Profesional */
+}
+
+.map-container {
+  margin-top: 20px;
+  height: 65%;
+  text-align: center;
+}
+#mapa {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-info {
+    margin: 10px 0;
     width: 100%;
-    height: 100%;
+  }
 }
 
-.direccionLocal{
-    width: 100%;
-    height: 100%;
+@media (min-width: 769px) {
+  .contact-form,
+  .contact-info {
+    float: left;
+    width: 45%; /* Dos columnas en escritorio */
+  }
 }
-.mapaDireccion{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    justify-items:center;
-    align-items: center;
-}
-
-.mapaDireccion iframe{
-    width: 100%;
-    height: 100%;
-    padding: 80px;
-}
-
-
-
-
-.contenidoContacto{
-    color: black;
-}
-
-
-
-
 
 /*
 1.	Rojo Energético (Para botones y elementos destacados):

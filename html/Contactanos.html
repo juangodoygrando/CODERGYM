@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>CoderGym</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -29,58 +30,46 @@
       </ul>
     </nav>
   </header>
-    <main class="contactFormPadre">
-      <h1 class="Contactanos">CONTACTANOS!!</h1>
-        
-          <div class="contenidoContacto">
-            <div class="contact-form">
-              <h3>Llena los datos y escribinos</h3>
-            <form class="formulario" action="">
-                <p>
-                  <label>Nombre</label>
-                  <input type="text" name="Nombre">
-                </p>
-                <p>
-                  <label>Apellido</label>
-                  <input type="text" name="Apellido">
-                </p>
-                <p>
-                  <label>Email</label>
-                  <input type="email" name="Email">
-                </p>
-                  <label>Nombre</label>
-                  <input type="text" name="Nombre">
-                <p>
-                    <label>Telefono</label>
-                    <input type="tel" name="Telefono">
-                </p>
-                <p>
-                  <label>Dejanos tu mensaje</label>
-                  <textarea name="" id=""></textarea>
-                </p>
-                <p>
-                  <button type="submit">Enviar</button>                
-                </p>                
-            </form>
-            </div>
-          </div>
-          <div class="info-local">
-            <div class="direccionLocal">
-              <h3 class="tituloDireccion"> Veni a visitarnos</h3>
-              <ul class="listaDireccion"></ul>
-                 <li><a href=""></a><i class="fa-solid fa-location-dot"></i> Barcelona, España</li>
-                <li><i class="fa-solid fa-phone"></i>+34 902281714</li>
-                <li><i class="fa-solid fa-envelope"></i>codergym@gymcoder.com</li>
-              </ul>
-            </div>
-            <div class="mapaDireccion">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95780.66780270975!2d2.057616858168931!3d41.392638435632634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1ses-419!2ses!4v1724689574019!5m2!1ses-419!2ses" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <main >
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-5 col-md-6 contact-form">
+                    <h2>Dejanos tus datos y te contactamos:</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Móvil</label>
+                            <input type="tel" class="form-control" id="mobile" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments" class="form-label">Comentarios</label>
+                            <textarea class="form-control" id="comments" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
                 </div>
+                <div class="col-lg-5 col-md-6 contact-info">
+                    <h2>Escribenos o ven a visitarnos a </h2>
+                    <ul class="list-unstyled">
+                        <li> (+34) 643986055</li>
+                        <li>coder@codergym.cat</li>
+                        <li><strong></strong>Carrer Maria Barrientos, Barcelona, España</li>
+                    </ul>
+                    <div class="map-container">
+                        <iframe  id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.7022508192535!2d2.1276579!3d41.380553299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4988a8c7daa25%3A0x596a5e6ceee2b605!2sCarrer%20Maria%20Barrientos%2C%20Les%20Corts%2C%2008028%20Barcelona!5e0!3m2!1ses!2ses!4v1726854678721!5m2!1ses!2ses" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
 
-            
-          </div>
-        
-    </main>
 
     <footer>
       <div class="footercontainer">
