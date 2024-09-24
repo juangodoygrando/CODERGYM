@@ -7,7 +7,7 @@
 
 body {
     height: 100%;
-    background: rgb(255, 255, 255);
+    background-color: rgb(247, 240, 240);
 }
 
 header {
@@ -85,6 +85,67 @@ nav a:hover {
     display: block;
     ;
 }
+
+.imagenContenedor {
+    position: relative;
+    width: 90%;
+    height: 50vh;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+
+.imagenInicio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    
+}
+
+.textoEstasListo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%; /* Aumenta el ancho del overlay */
+    height: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.726);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.textoEstasListo h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.textoEstasListo p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: rgb(255, 159, 67);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(255, 120, 40);
+    transform: scale(1.05);
+    color: rgb(44, 62, 80);
+}
+
+
 
 
 @media only screen and (max-width: 480px) {
