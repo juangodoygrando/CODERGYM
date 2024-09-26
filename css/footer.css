@@ -1,5 +1,5 @@
 footer {
-  background-color: rgb(255, 159, 67);
+  background-color: rgb(0, 139, 139);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -21,7 +21,7 @@ footer {
   margin: 0 10px;
   border-radius: 50%;
   font-size: 20px;
-  color: rgb(255, 159, 67);
+  color: rgb(0, 139, 139);
   display: inline-flex;
   justify-content: center;
   align-items: center;

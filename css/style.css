@@ -7,14 +7,14 @@
 
 body {
     height: 100%;
-    background-color: rgb(247, 240, 240);
+    background-color:rgb(238, 238, 238);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     min-height: 80px;
-    background-color: rgb(255, 159, 67);
+    background-color: rgb(0, 139, 139);
     align-items: center;
     padding: 15px;
     top: 0px;
@@ -108,7 +108,7 @@ nav a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80%; /* Aumenta el ancho del overlay */
+    width: 80%; 
     height: auto;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -129,7 +129,7 @@ nav a:hover {
 }
 
 .btn {
-    background-color: rgb(255, 159, 67);
+    background-color: rgb(0, 139, 139);
     border: none;
     padding: 10px 20px;
     font-size: 20px;
@@ -140,31 +140,101 @@ nav a:hover {
 }
 
 .btn:hover {
-    background-color: rgb(255, 120, 40);
+    background-color: rgb(0, 139, 139);
     transform: scale(1.05);
     color: rgb(44, 62, 80);
 }
 
 
+.clases__personalizadas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.clases__personalizadas__imagen .img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.clases__personalizadas__texto {
+    max-width: 50%; 
+    padding-left: 180px; 
+    
+}
+
+.clases__personalizadas__texto__titulo {
+    font-size: 80px; 
+    margin-bottom: 50px; 
+}
+.clases__personalizadas__texto__btn{
+    display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(0, 139, 139);
+  color: white;
+  text-decoration: none; 
+  border-radius: 9px; 
+  font-size: 45px;
+  cursor: pointer;
+  text-align: center;
+}
 
 
-@media only screen and (max-width: 480px) {
-    header {
-        flex-direction: column;
+
+
+
+
+
+@media (min-width: 1024px) {
+    .imagenContenedor {
+        width: 80%;
+        height: 60vh;
+    }
+
+    .clases__personalizadas__texto__titulo {
+        font-size: 70px;
+    }
+
+    .clases__personalizadas__texto__btn {
+        font-size: 40px;
     }
 }
 
-/*
-1.	Rojo Energético (Para botones y elementos destacados):
-o	RGB: rgb(220, 53, 69)
-2.	Naranja Vital (Para acentos o llamados a la acción secundarios):
-o	RGB: rgb(255, 159, 67)
-3.	Gris Claro (Para fondos o áreas neutras):
-o	RGB: rgb(238, 238, 238)
-4.	Verde Saludable (Para elementos relacionados con bienestar y salud):
-o	RGB: rgb(40, 167, 69)
-5.	Azul Marino Profesional (Para encabezados o secciones importantes):
-o	RGB: rgb(44, 62, 80)
-6.	Blanco Puro (Para el fondo principal y textos claros):
-o	RGB: rgb(255, 255, 255)
-*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-nombre {
+        font-size: 40px; 
+    }
+
+    .lista .listaA {
+        display: block;
+        text-align: center;
+    }
+
+    .clases__personalizadas {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .clases__personalizadas__texto {
+        padding: 0;
+        text-align: center;
+    }
+
+    .clases__personalizadas__texto__titulo {
+        font-size: 40px; /
+    }
+
+    .imagenContenedor {
+        width: 100%; 
+        height: auto; 
+    }
+}
+

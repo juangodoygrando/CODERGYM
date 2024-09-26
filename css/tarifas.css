@@ -1,25 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(247, 240, 240);
+    background-color: rgb(238, 238, 238);
 }
   
 main {
   width: 100%;
   max-width: 1200px;
   padding: 20px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  
   background-color: #fff;
   border-radius: 10px;
 }
 
-/* Título */
+
 .tarifas__titulo h1 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-/* Contenedor de planes */
+
 .tarifas__planes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -54,17 +54,18 @@ main {
   margin-bottom: 10px;
 }
 
-.tarifas__planes__fitness__precio,
+
 .tarifas__planes__performance__precio,
-.tarifas__planes__pro__precio {
-  font-size: 2rem;
+.tarifas__planes__pro__precio,
+.tarifas__planes__fitness__precios{
+  font-size: 35px;
   font-weight: bold;
-  color: rgb(220, 53, 69);
+  color: red;
 }
 
-/* Sección Matrícula */
+
 .tarifas__matricula {
-  grid-column: span 3;
+  grid-column: span ;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   padding: 20px;
@@ -73,79 +74,96 @@ main {
 }
 
 .tarifas__matricula__titulo {
-  font-size: 1.5rem;
+  font-size: px;
   margin-bottom: 10px;
 }
 
 .tarifas__matricula__pagoUnico {
-  font-size: 1rem;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
 .tarifas__matricula__precio {
-  font-size: 2rem;
+  font-size: 35px;
   font-weight: bold;
-  color: rgb(220, 53, 69);
+  color: red;
 }
 
-/* ---- Responsive design ---- */
+.tarifas__planes__fitness__segunHorario{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-/* Estilos para pantallas pequeñas (móviles) */
+}
+.tarifas__planes__fitness__segunHorario__mañana,.tarifas__planes__fitness__segunHorario__tarde{
+  color:rgb(40, 167, 69);
+  font-size: 19px;
+}
+
+.tarifas__planes__fitness__precios{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
   .tarifas__planes {
-    grid-template-columns: 1fr; /* Apila las columnas en una fila */
+    grid-template-columns: 1fr; 
   }
 
   .tarifas__titulo h1 {
-    font-size: 1.5rem; /* Reduce el tamaño del título en móviles */
+    font-size: 1.5rem; 
   }
 
   .tarifas__planes__fitness__titulo,
   .tarifas__planes__performance__titulo,
   .tarifas__planes__pro__titulo {
-    font-size: 1.2rem; /* Ajusta los títulos de los planes */
+    font-size: 1.2rem; 
   }
 
   .tarifas__planes__fitness__precio,
   .tarifas__planes__performance__precio,
   .tarifas__planes__pro__precio {
-    font-size: 1.5rem; /* Reduce el tamaño de los precios */
+    font-size: 1.5rem; 
   }
 
   .tarifas__matricula__titulo {
-    font-size: 1.2rem; /* Ajusta el tamaño del título de matrícula */
+    font-size: 1.2rem; 
   }
 
   main {
-    padding: 10px; /* Reduce el padding en móviles */
+    padding: 10px; 
   }
 }
 
-/* Estilos para pantallas grandes (escritorio) */
+
 @media (min-width: 1200px) {
   main {
-    max-width: 1400px; /* Ajusta el ancho máximo del contenedor */
+    max-width: 1400px; 
     padding: 40px;
   }
 
   .tarifas__titulo h1 {
-    font-size: 2.5rem; /* Aumenta el tamaño del título en escritorio */
+    font-size: 2.5rem; 
   }
 
   .tarifas__planes__fitness__titulo,
   .tarifas__planes__performance__titulo,
   .tarifas__planes__pro__titulo {
-    font-size: 1.8rem; /* Aumenta los títulos de los planes */
+    font-size: 1.8rem; 
   }
 
   .tarifas__planes__fitness__precio,
   .tarifas__planes__performance__precio,
   .tarifas__planes__pro__precio {
-    font-size: 2.5rem; /* Aumenta el tamaño de los precios */
+    font-size: 2.5rem; 
   }
 
   .tarifas__matricula__titulo {
-    font-size: 1.8rem; /* Aumenta el tamaño del título de matrícula */
+    font-size: 1.8rem; 
   }
 }
 
