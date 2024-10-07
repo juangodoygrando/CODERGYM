@@ -58,40 +58,57 @@ body {
 
 
 
-
-@media only screen and (max-width: 768px) {
-  .nuestras-instalaciones {
-    font-size: 1.5em;
+@media (max-width: 768px) {
+  .nuestras__instalaciones {
+    font-size: 40px;
   }
 
-  .galeria {
-    font-size: 1.4em;
+  .nuestras__instalaciones__h3 {
+    font-size: 28px;
+  }
+
+  .video__instalaciones iframe {
+    width: 90%;
+    min-height: 250px;
+  }
+
+  .galeria__titulo {
+    font-size: 35px; 
+    margin: 30px 0 15px; 
   }
 
   .galeria__fotos {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr); 
   }
 
-  .galeria-fotos__item {
-    border-radius: 5px;
-  }
-
-  .video-instalaciones iframe {
-    width: 100%;
-    height: auto;
+  .fotos__istalaciones {
+    height: 250px; 
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .nuestras-instalaciones {
-    font-size: 2.5em;
+
+@media (max-width: 480px) {
+  .nuestras__instalaciones {
+    font-size: 30px;
+  }
+
+  .nuestras__instalaciones__h3 {
+    font-size: 24px;
+  }
+
+  .video__instalaciones iframe {
+    min-height: 200px;
+  }
+
+  .galeria__titulo {
+    font-size: 28px;
   }
 
   .galeria__fotos {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
   }
 
-  .galeria-fotos__item {
-    border-radius: 10px;
+  .fotos__istalaciones {
+    height: 200px; 
   }
 }

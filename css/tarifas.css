@@ -105,65 +105,77 @@ main {
 }
 
 
-
-
-
-
 @media (max-width: 768px) {
+  .tarifas__titulo h1 {
+    font-size: 1.5rem;
+  }
+
   .tarifas__planes {
-    grid-template-columns: 1fr; 
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .tarifas__titulo h1 {
-    font-size: 1.5rem; 
-  }
-
-  .tarifas__planes__fitness__titulo,
-  .tarifas__planes__performance__titulo,
-  .tarifas__planes__pro__titulo {
-    font-size: 1.2rem; 
-  }
-
-  .tarifas__planes__fitness__precio,
-  .tarifas__planes__performance__precio,
-  .tarifas__planes__pro__precio {
-    font-size: 1.5rem; 
-  }
-
-  .tarifas__matricula__titulo {
-    font-size: 1.2rem; 
-  }
-
-  main {
-    padding: 10px; 
-  }
-}
-
-
-@media (min-width: 1200px) {
-  main {
-    max-width: 1400px; 
-    padding: 40px;
-  }
-
-  .tarifas__titulo h1 {
-    font-size: 2.5rem; 
+  .tarifas__planes li {
+    padding: 15px;
   }
 
   .tarifas__planes__fitness__titulo,
   .tarifas__planes__performance__titulo,
   .tarifas__planes__pro__titulo {
-    font-size: 1.8rem; 
+    font-size: 1.25rem;
   }
 
-  .tarifas__planes__fitness__precio,
-  .tarifas__planes__performance__precio,
-  .tarifas__planes__pro__precio {
-    font-size: 2.5rem; 
+  .tarifas__planes__fitness__incluye,
+  .tarifas__planes__performance__incluye,
+  .tarifas__planes__pro__incluye {
+    font-size: 0.9rem;
+  }
+
+  .tarifas__matricula {
+    margin-top: 20px;
+  }
+
+  .tarifas__matricula__pagoUnico,
+  .tarifas__matricula__precio {
+    font-size: 20px;
+  }
+
+  .tarifas__planes__fitness__segunHorario {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tarifas__titulo h1 {
+    font-size: 1.2rem;
+  }
+
+  .tarifas__planes {
+    grid-template-columns: 1fr;
+  }
+
+  .tarifas__planes li {
+    padding: 10px;
+  }
+
+  .tarifas__planes__fitness__titulo,
+  .tarifas__planes__performance__titulo,
+  .tarifas__planes__pro__titulo {
+    font-size: 1rem;
   }
 
   .tarifas__matricula__titulo {
-    font-size: 1.8rem; 
+    font-size: 20px;
+  }
+
+  .tarifas__matricula__pagoUnico,
+  .tarifas__matricula__precio {
+    font-size: 18px;
+  }
+
+  .tarifas__planes__fitness__segunHorario {
+    grid-template-columns: 1fr;
   }
 }
+
+
 
