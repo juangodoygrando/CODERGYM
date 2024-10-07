@@ -37,18 +37,3 @@ h2 {
   background-color: $colorNavFooter;
 }
 
-@media (max-width: 768px) {
-  .contact-form,
-  .contact-info {
-    margin: 10px 0;
-    width: 100%;
-  }
-}
-
-@media (min-width: 769px) {
-  .contact-form,
-  .contact-info {
-    float: left;
-    width: 45%;
-  }
-}

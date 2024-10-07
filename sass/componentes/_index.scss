@@ -2,9 +2,8 @@
   width: 100%;
 }
 
-
 .imagenContenedor {
-  position: relative ;
+  position: relative;
   width: 100%;
   height: 55vh;
   margin: 40px auto;
@@ -12,18 +11,15 @@
   border-radius: 15px;
   display: flex;
   justify-content: center;
-  align-items: center; 
-   
+  align-items: center;
 }
 
 .imagenInicio {
-
   width: 90%;
   height: 100%;
   object-fit: cover;
   justify-content: center;
-  box-shadow: $boxSahdowImagenes; 
-  
+  box-shadow: $boxSahdowImagenes;
 }
 
 .textoEstasListo {
@@ -38,13 +34,12 @@
   background-color: rgba(0, 0, 0, 0.726);
   padding: 20px;
   border-radius: 10px;
-
 }
 
 .textoEstasListo h2 {
   font-size: 50px;
   margin-bottom: 20px;
-  color:$colorBody
+  color: $colorBody;
 }
 
 .textoEstasListo p {
@@ -54,7 +49,7 @@
 }
 
 .bottonMiraNuestrasTarifas,
-.bottonContactanos{
+.bottonContactanos {
   background-color: $colorNavFooter;
   border: none;
   padding: 10px 20px;
@@ -65,14 +60,13 @@
   border-radius: 5px;
 }
 
-.bottonMiraNuestrasTarifas:hover ,
+.bottonMiraNuestrasTarifas:hover,
 .bottonContactanos:hover {
-  
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 
 .clases__personalizadas {
-  display: flex;                  
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
@@ -83,7 +77,7 @@
   max-width: 80%;
   height: auto;
   object-fit: cover;
-  box-shadow: $boxSahdowImagenes; 
+  box-shadow: $boxSahdowImagenes;
 }
 
 .clases__personalizadas__texto {
@@ -93,7 +87,7 @@
 }
 
 .clases__personalizadas__texto__titulo {
-  font-size: 2rem bold; 
+  font-size: 2rem bold;
   margin-bottom: 20px;
 }
 
@@ -102,7 +96,7 @@
   padding: 10px 20px;
   background-color: $colorNavFooter;
   color: $colorBody;
-  border-radius: 5px ;
+  border-radius: 5px;
   font-size: 1.5rem;
   cursor: pointer;
   text-align: center;
@@ -111,4 +105,93 @@
 
 .clases__personalizadas__texto__btn:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .imagenContenedor {
+    height: 35vh;
+    margin: 20px auto;
+  }
+
+  .textoEstasListo h2 {
+    font-size: 30px;
+  }
+
+  .textoEstasListo p {
+    font-size: 18px;
+  }
+
+  .bottonMiraNuestrasTarifas,
+  .bottonContactanos {
+    padding: 8px 15px;
+    font-size: 16px;
+  }
+
+  .clases__personalizadas {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .clases__personalizadas__imagen {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .clases__personalizadas__texto {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .clases__personalizadas__texto__titulo {
+    font-size: 1.5rem;
+  }
+
+  .clases__personalizadas__texto__btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagenContenedor {
+    height: 45vh;
+    margin: 30px auto;
+  }
+
+  .textoEstasListo h2 {
+    font-size: 40px;
+  }
+
+  .textoEstasListo p {
+    font-size: 20px;
+  }
+
+  .bottonMiraNuestrasTarifas,
+  .bottonContactanos {
+    padding: 10px 18px;
+    font-size: 18px;
+  }
+
+  .clases__personalizadas {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .clases__personalizadas__imagen {
+    width: 80%;
+  }
+
+  .clases__personalizadas__texto {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .clases__personalizadas__texto__titulo {
+    font-size: 1.8rem;
+  }
+
+  .clases__personalizadas__texto__btn {
+    font-size: 1.4rem;
+  }
 }
