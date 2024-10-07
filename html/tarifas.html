@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,347;1,347&display=swap" rel="stylesheet">
+
     <title>CoderGym</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/tarifas.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
      <link rel="shortcut icon" href="../Imagenes/Logofavicom.ico.jpg">
 <body>
   <header >
     <div class="logo">
-      <img class="logoimg" src="../Imagenes/Logo coder.jpg" alt="Codergym" />
       <h2 class="logo-nombre">CoderGym</h2>
     </div>
     <nav>
@@ -29,79 +27,114 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main">
     <div class="tarifas">
       <div class="tarifas__titulo">
-        <h1>TARIFAS CODERGYM</h1>
+        <h1>NUESTRAS TARIFAS:</h1>
       </div>
       <lu class="tarifas__planes">
         <div class="tarifas__planes__fitness">
           <h2 class="tarifas__planes__fitness__titulo">FITNESS</h2>
-            <h3 class="tarifas__planes__fitness__incluye"> Incluye: </h3>
-              <div>
-              <li>Acceso completo a instalaciones: uso ilimitado de todas las áreas</li>
-              <li>App exclusiva para clientes</li>
-              <li>Ingreso a todas las salas</li>
-              <li>Ingreso a todas las salas</li>
-              </div>
-            <lu class="tarifas__planes__fitness__segunHorario">
-              <div>
-                <li class="tarifas__planes__fitness__segunHorario__mañana">
-                  <strong>MAÑANA</strong>
-                  <br>Lun a Vie </br>
-                  <br>6:00 a 14:00</br>
-                  <br>Sab/Dom/Fes</br>
-                  <br>TODO EL DIA</br>
-                </li>                
-              </div>
-              <div>
-                <li class="tarifas__planes__fitness__segunHorario__tarde">
-                  <strong>TARDE</strong>
-                  <br>Lun a Vie</br>
-                  <br>14:00 a 23:00</br>
-                  <br>Sab/Dom/Fes </br>
-                  <br>TODO EL DIA</br>
-                </li>       
-              </div>
-            </lu>
-              <div class="tarifas__planes__fitness__precios">
-                <li>70€</li>
-                <li>85€</li>
-              </div>
-      </div>
+          <h3 class="tarifas__planes__fitness__incluye"> Incluye: </h3>
+          <div class="tarifas__planes__fitness__incluye__lista">
+            <li>Acceso completo a instalaciones: uso ilimitado de todas las áreas</li>
+            <li>App exclusiva para clientes</li>
+            <li>Ingreso a todas las salas</li>
+            <li>Ingreso a todas las salas</li>
+          </div>
+          <lu class="tarifas__planes__fitness__segunHorario">
+            <div>
+              <li class="tarifas__planes__fitness__segunHorario__mañana">
+                <strong>MAÑANA</strong>
+                <br>Lun a Vie </br>
+                <br>6:00 a 14:00</br>
+                <br>Sab/Dom/Fes</br>
+                <br>TODO EL DIA</br>
+              </li>
+            </div>
+            <div>
+              <li class="tarifas__planes__fitness__segunHorario__tarde">
+                <strong>TARDE</strong>
+                <br>Lun a Vie</br>
+                <br>14:00 a 23:00</br>
+                <br>Sab/Dom/Fes </br>
+                <br>TODO EL DIA</br>
+              </li>
+            </div>
+            
+          </lu>
+           <div class="tarifas__planes__fitness__precios">
+            <span class="precio70">70€</span>
+            <span class="precio85">85€</span>
+          </div>
+        </div>
         
           <div class="tarifas__planes__performance">
             <h2 class="tarifas__planes__performance__titulo">PERFORMANCE</h2>
             <h3 class="tarifas__planes__performance__incluye">Incluye: </h3>
-          <div>
+          <div class="tarifas__planes__performance__incluye__lista">
             <li>Acceso completo a instalaciones: uso ilimitado de todas las áreas</li>
             <li>App exclusiva para clientes</li>
             <li>Horario completo: acceso en cualquier horario durante el día.</li>
             <li>Clases grupales ilimitadas: participación ilimitada en todas las clases grupales.</li>
             <li>Entrenamiento personalizado: incluye 3 sesión de entrenamiento personalizado al mes.</li>
             <li>Descuentos: 10% de descuento en productos de la tienda del gimnasio.</li>
+            
           </div>
-          <div class="tarifas__planes__performance__precio">100€</div>
+          <div class="tarifas__planes__performance__precios">
+            <span class="precio100">100€</span>
+          </div>
+          
         </div>
         <div class="tarifas__planes__pro">
           <h2 class="tarifas__planes__pro__titulo">PRO</h2>
           <h3 class="tarifas__planes__pro__incluye">Incluye: </h3>
-          <div>
+          <div class="tarifas__planes__pro__incluye__lista">
             <li>Acceso completo a instalaciones: uso ilimitado de todas las áreas</li>
             <li>App exclusiva para clientes</li>
             <li>Horario completo: acceso en cualquier horario durante el día.</li>
             <li>Clases grupales ilimitadas: participación ilimitada en todas las clases grupales.</li>
             <li>Entrenamiento personalizado: incluye 6 sesión de entrenamiento personalizado al mes.</li>
             <li>Descuentos especiales: 20% de descuento en productos y servicios adicionales, como masajes o nutrición.</li>
-            <li>Acceso a eventos exclusivos: participación en eventos VIP organizados por el gimnasio.</li>
+            
           </div>
-          <div class="tarifas__planes__pro__precio">140€</div>
+          <div class="tarifas__planes__pro__precios">
+            <span class="precio140">140€</span>
+          </div>
+
         </div>
+        
       </lu>  
+      
       <div class="tarifas__matricula">
-        <h2 class="tarifas__matricula">MATRICULA</h2>
-        <strong class="tarifas__matricula__pagoUnico">Pago unico</strong>
-        <div class="tarifas__matricula__precio">60€</div>
+        <h2 class="tarifas__matricula__titulo">Matrícula</h2>
+        <p class="tarifas__matricula__precio">100€</p>
+        <p class="tarifas__matricula__pagoUnico">*Pago único</p>
+        
+      </div>
+      
+      <div class="servicios__adicionales">
+        <h3 class="servicios-adicionales__titulo">Servicios Adicionales</h3>
+        <ul class="servicios-adicionales__lista">
+          <li class="servicio">
+            <span class="servicio__nombre">Entrenamiento Personalizado:</span>
+            <ul class="servicio__precio">
+              <li>Sesión única:<strong> 18€</strong></li>
+              <li>Packs de 3 sesiones:<strong> 45€</strong></li>
+              <li>Packs de 5 sesiones:<strong> 65€</strong></li>
+              <li>Packs de 10 sesiones:<strong> 100€</strong></li> 
+            </ul>
+          </li>
+          <li class="servicio">
+            <span class="servicio__nombre">Sesión de asesoramiento nutricional:</span>
+            <span class="servicio__precio"><strong>40€/Sesión</strong></span>
+            
+          </li>
+          <li class="servicio">
+            <span class="servicio__nombre">Servicio de Toallas:</span>
+            <span class="servicio__precio"><strong>10€/mes</strong></span>
+            
+        </ul>
       </div>
       </div>
     </div>

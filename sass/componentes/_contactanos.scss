@@ -1,0 +1,54 @@
+body {
+  background-color: $colorBody;
+}
+.container {
+  max-width: 1200px;
+  
+}
+
+.contact-form,
+.contact-info {
+  background-color:  white;
+  border-radius: 10px;
+  box-shadow: $boxSahdowImagenes; 
+  padding: 20px;
+  margin: 0px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: $colorFondoLetras;
+}
+
+.map-container {
+  margin-top: 20px;
+  height: 65%;
+  text-align: center;
+}
+#mapa {
+  height: 100%;
+}
+.btn {
+  background-color: $colorNavFooter;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: $colorNavFooter;
+}
+
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-info {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .contact-form,
+  .contact-info {
+    float: left;
+    width: 45%;
+  }
+}
