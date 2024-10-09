@@ -26,7 +26,6 @@ body {
   width: 75%;
   min-height: 450px;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 8px $colorNavFooter;
 }
 
@@ -34,7 +33,7 @@ body {
   text-align: center;
   font-size: 65px;
   font-weight: bolder;
-  margin: 60px 0 20px;
+  margin-bottom: 90px;
   color: $colorFondoLetras;
 }
 
@@ -50,7 +49,7 @@ body {
   height: 450px;
   border-radius: 8px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s;
   box-shadow: 0px 4px 8px $colorNavFooter;
 }
 
@@ -78,7 +77,8 @@ body {
 .instalacionesTexto {
   text-align: center;
   font-size: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .listaIntsalaciones {
@@ -87,20 +87,90 @@ body {
   margin: 0;
 }
 
-.listaIntsalaciones strong{
+.listaIntsalaciones strong {
   font-size: 40px;
-  margin: 25px;
+  display: inline-block;
+  margin: 15px;
 }
 .listaIntsalaciones li {
   background-color: $colorBody;
-  border: 1px solid #ddd; /* Borde de los elementos */
-  border-radius: 8px; /* Bordes redondeados */
-  padding: 15px; /* Espaciado interno */
-  margin-bottom: 25px; /* Espacio entre los elementos */
-  font-size: 25px; /* Tamaño de fuente de los elementos */
-  box-shadow: 0 2px 5px $colorNavFooter; /* Sombra para un efecto de profundidad */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 25px;
+  font-size: 25px;
+  box-shadow: 0 2px 5px $colorNavFooter;
 }
 
-.instalaciones__lista li strong {
-  color: #333;
+@media (max-width: 480px) {
+  .nuestras__instalaciones,
+  .nuestras__instalaciones__h3,
+  .galeria__titulo,
+  .instalacionesTitulo,
+  .instalacionesTexto {
+    font-size: 30px;
+  }
+
+  .galeria__fotos {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .fotos__istalaciones {
+    height: 250px;
+  }
+
+  .video__instalaciones iframe {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .instalacionesExplicacion {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .listaIntsalaciones strong {
+    font-size: 25px;
+  }
+
+  .listaIntsalaciones li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nuestras__instalaciones,
+  .nuestras__instalaciones__h3,
+  .galeria__titulo,
+  .instalacionesTitulo,
+  .instalacionesTexto {
+    font-size: 45px;
+  }
+
+  .galeria__fotos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .fotos__istalaciones {
+    height: 350px;
+  }
+
+  .video__instalaciones iframe {
+    width: 90%;
+    min-height: 350px;
+  }
+
+  .instalacionesExplicacion {
+    max-width: 100%;
+  }
+
+  .listaIntsalaciones strong {
+    font-size: 30px;
+  }
+
+  .listaIntsalaciones li {
+    font-size: 20px;
+  }
 }

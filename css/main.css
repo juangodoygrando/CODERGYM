@@ -63,6 +63,36 @@ nav a:hover {
   cursor: pointer;
   transform: scaleX(1.1); }
 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px; }
+  .lista .listaA {
+    flex-direction: column;
+    margin: 5px 0; }
+  .logo {
+    margin-left: 0;
+    margin-bottom: 10px; }
+  nav a {
+    font-size: 18px;
+    padding-right: 10px; }
+  .logo-nombre {
+    font-size: 50px;
+    margin-left: 0; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    padding: 15px;
+    min-height: 70px; }
+  .lista .listaA {
+    margin: 0 10px; }
+  nav a {
+    font-size: 18px;
+    padding-right: 12px; }
+  .logo-nombre {
+    font-size: 60px; } }
+
 footer {
   background-image: linear-gradient(to top, darkcyan 65%, #eeeeee);
   position: fixed;
@@ -225,6 +255,59 @@ footer {
 .clases__personalizadas__texto__btn:hover {
   transform: scale(1.1); }
 
+@media (max-width: 480px) {
+  .imagenContenedor {
+    height: 35vh;
+    margin: 20px auto; }
+  .textoEstasListo h2 {
+    font-size: 30px; }
+  .textoEstasListo p {
+    font-size: 18px; }
+  .bottonMiraNuestrasTarifas,
+  .bottonContactanos {
+    padding: 8px 15px;
+    font-size: 16px; }
+  .clases__personalizadas {
+    flex-direction: column;
+    padding: 20px; }
+  .clases__personalizadas__imagen {
+    width: 90%;
+    max-width: 100%; }
+  .clases__personalizadas__texto {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px; }
+  .clases__personalizadas__texto__titulo {
+    font-size: 1.5rem; }
+  .clases__personalizadas__texto__btn {
+    font-size: 1.2rem; } }
+
+@media (max-width: 768px) {
+  .imagenContenedor {
+    height: 45vh;
+    margin: 30px auto; }
+  .textoEstasListo h2 {
+    font-size: 40px; }
+  .textoEstasListo p {
+    font-size: 20px; }
+  .bottonMiraNuestrasTarifas,
+  .bottonContactanos {
+    padding: 10px 18px;
+    font-size: 18px; }
+  .clases__personalizadas {
+    flex-direction: column;
+    padding: 40px; }
+  .clases__personalizadas__imagen {
+    width: 80%; }
+  .clases__personalizadas__texto {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px; }
+  .clases__personalizadas__texto__titulo {
+    font-size: 1.8rem; }
+  .clases__personalizadas__texto__btn {
+    font-size: 1.4rem; } }
+
 .main {
   width: 100%;
   width: 75%;
@@ -374,6 +457,69 @@ footer {
   text-align: right;
   list-style: none; }
 
+@media (max-width: 480px) {
+  .main {
+    width: 90%;
+    padding: 10px; }
+  .tarifas__titulo h1 {
+    font-size: 40px;
+    margin: 15px;
+    padding: 15px; }
+  .tarifas__planes {
+    grid-template-columns: 1fr;
+    gap: 15px; } }
+
+@media (max-width: 768px) {
+  .main {
+    width: 90%;
+    padding: 15px; }
+  .tarifas__titulo h1 {
+    font-size: 45px;
+    margin: 20px;
+    padding: 20px; }
+  .tarifas__planes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; }
+  .tarifas__planes__fitness__segunHorario {
+    grid-template-columns: 1fr; }
+  .tarifas__planes__fitness__titulo,
+  .tarifas__planes__performance__titulo,
+  .tarifas__planes__pro__titulo {
+    font-size: 30px; }
+  .tarifas__planes__fitness__incluye,
+  .tarifas__planes__performance__incluye,
+  .tarifas__planes__pro__incluye {
+    font-size: 1.4rem; }
+  .tarifas__planes__fitness__incluye__lista,
+  .tarifas__planes__performance__incluye__lista,
+  .tarifas__planes__pro__incluye__lista,
+  .tarifas__planes__fitness__segunHorario__tarde,
+  .tarifas__planes__fitness__segunHorario__mañana {
+    font-size: 1.2rem; }
+  .tarifas__planes__fitness__precios,
+  .tarifas__planes__performance__precios,
+  .tarifas__planes__pro__precios {
+    font-size: 40px; }
+  .tarifas__matricula__titulo {
+    font-size: 35px;
+    margin: 20px;
+    padding: 20px; }
+  .tarifas__matricula__precio {
+    font-size: 50px;
+    margin: 20px; }
+  .tarifas__matricula__pagoUnico {
+    font-size: 18px; }
+  .servicios__adicionales {
+    padding: 15px; }
+  .servicios-adicionales__titulo {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .servicio {
+    padding: 8px 0; }
+  .servicio__nombre,
+  .servicio__precio {
+    font-size: 20px; } }
+
 body {
   background-color: #eeeeee; }
 
@@ -400,14 +546,13 @@ body {
   width: 75%;
   min-height: 450px;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 8px darkcyan; }
 
 .galeria__titulo {
   text-align: center;
   font-size: 65px;
   font-weight: bolder;
-  margin: 60px 0 20px;
+  margin-bottom: 90px;
   color: #2c3e50; }
 
 .galeria__fotos {
@@ -421,7 +566,7 @@ body {
   height: 450px;
   border-radius: 8px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s;
   box-shadow: 0px 4px 8px darkcyan; }
 
 .fotos__istalaciones:hover {
@@ -444,7 +589,8 @@ body {
 .instalacionesTexto {
   text-align: center;
   font-size: 35px;
-  margin-bottom: 30px; }
+  margin-bottom: 80px;
+  margin-top: 80px; }
 
 .listaIntsalaciones {
   list-style: none;
@@ -453,25 +599,62 @@ body {
 
 .listaIntsalaciones strong {
   font-size: 40px;
-  margin: 25px; }
+  display: inline-block;
+  margin: 15px; }
 
 .listaIntsalaciones li {
   background-color: #eeeeee;
   border: 1px solid #ddd;
-  /* Borde de los elementos */
   border-radius: 8px;
-  /* Bordes redondeados */
   padding: 15px;
-  /* Espaciado interno */
   margin-bottom: 25px;
-  /* Espacio entre los elementos */
   font-size: 25px;
-  /* Tamaño de fuente de los elementos */
-  box-shadow: 0 2px 5px darkcyan;
-  /* Sombra para un efecto de profundidad */ }
+  box-shadow: 0 2px 5px darkcyan; }
 
-.instalaciones__lista li strong {
-  color: #333; }
+@media (max-width: 480px) {
+  .nuestras__instalaciones,
+  .nuestras__instalaciones__h3,
+  .galeria__titulo,
+  .instalacionesTitulo,
+  .instalacionesTexto {
+    font-size: 30px; }
+  .galeria__fotos {
+    grid-template-columns: 1fr;
+    gap: 8px; }
+  .fotos__istalaciones {
+    height: 250px; }
+  .video__instalaciones iframe {
+    width: 100%;
+    min-height: 250px; }
+  .instalacionesExplicacion {
+    max-width: 100%;
+    padding: 10px; }
+  .listaIntsalaciones strong {
+    font-size: 25px; }
+  .listaIntsalaciones li {
+    font-size: 18px; } }
+
+@media (max-width: 768px) {
+  .nuestras__instalaciones,
+  .nuestras__instalaciones__h3,
+  .galeria__titulo,
+  .instalacionesTitulo,
+  .instalacionesTexto {
+    font-size: 45px; }
+  .galeria__fotos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; }
+  .fotos__istalaciones {
+    height: 350px; }
+  .video__instalaciones iframe {
+    width: 90%;
+    min-height: 350px; }
+  .instalacionesExplicacion {
+    max-width: 100%; }
+  .listaIntsalaciones strong {
+    font-size: 30px; }
+  .listaIntsalaciones li {
+    font-size: 20px; } }
 
 body {
   background-color: #eeeeee; }
@@ -505,18 +688,6 @@ h2 {
 
 .btn:hover {
   background-color: darkcyan; }
-
-@media (max-width: 768px) {
-  .contact-form,
-  .contact-info {
-    margin: 10px 0;
-    width: 100%; } }
-
-@media (min-width: 769px) {
-  .contact-form,
-  .contact-info {
-    float: left;
-    width: 45%; } }
 
 .clasesDirigidas {
   padding: 20px; }
@@ -559,3 +730,43 @@ p {
   font-weight: bold;
   font-weight: bold;
   font-size: 40px; }
+
+@media (max-width: 480px) {
+  .tituloClasesDirigidas {
+    font-size: 30px;
+    margin: 30px; }
+  .clase {
+    flex-direction: column;
+    margin-bottom: 20px; }
+  .texto {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center; }
+  .imagen {
+    margin-bottom: 20px; }
+  p {
+    font-size: 18px;
+    margin-left: 0; }
+  .tituloClaseDirigidasH2 {
+    font-size: 30px;
+    margin-left: 0; } }
+
+@media (max-width: 768px) {
+  .tituloClasesDirigidas {
+    font-size: 40px;
+    margin: 40px; }
+  .clase {
+    flex-direction: column;
+    margin-bottom: 25px; }
+  .texto {
+    margin-right: 0;
+    margin-bottom: 15px;
+    text-align: center; }
+  .imagen {
+    margin-bottom: 20px; }
+  p {
+    font-size: 20px;
+    margin-left: 0; }
+  .tituloClaseDirigidasH2 {
+    font-size: 35px;
+    margin-left: 0; } }
