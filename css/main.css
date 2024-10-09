@@ -66,32 +66,30 @@ nav a:hover {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     padding: 10px; }
-  .lista .listaA {
+  .lista {
+    display: flex;
     flex-direction: column;
-    margin: 5px 0; }
-  .logo {
-    margin-left: 0;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0; }
+  .lista .listaA {
+    margin: 10px 0; }
+  .logo-nombre {
+    font-size: 50px;
     margin-bottom: 10px; }
   nav a {
     font-size: 18px;
-    padding-right: 10px; }
-  .logo-nombre {
-    font-size: 50px;
-    margin-left: 0; } }
+    padding: 5px 0; } }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 480px) {
   header {
-    padding: 15px;
-    min-height: 70px; }
-  .lista .listaA {
-    margin: 0 10px; }
-  nav a {
-    font-size: 18px;
-    padding-right: 12px; }
+    padding: 5px; }
   .logo-nombre {
-    font-size: 60px; } }
+    font-size: 40px; }
+  nav a {
+    font-size: 16px; } }
 
 footer {
   background-image: linear-gradient(to top, darkcyan 65%, #eeeeee);
@@ -148,7 +146,7 @@ footer {
     width: 35px;
     height: 35px;
     margin: 0 5px; }
-  .copyright {
+  .copyright h6 {
     font-size: 12px; } }
 
 @media only screen and (min-width: 768px) {
@@ -156,7 +154,7 @@ footer {
     font-size: 24px;
     width: 50px;
     height: 50px; }
-  .copyright {
+  .copyright h6 {
     font-size: 16px; } }
 
 /* Componentes */
@@ -259,6 +257,12 @@ footer {
   .imagenContenedor {
     height: 35vh;
     margin: 20px auto; }
+  .textoEstasListo {
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px; }
   .textoEstasListo h2 {
     font-size: 30px; }
   .textoEstasListo p {
@@ -478,10 +482,10 @@ footer {
     margin: 20px;
     padding: 20px; }
   .tarifas__planes {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 15px; }
   .tarifas__planes__fitness__segunHorario {
-    grid-template-columns: 1fr; }
+    grid-template-columns: repeat(2, 1fr); }
   .tarifas__planes__fitness__titulo,
   .tarifas__planes__performance__titulo,
   .tarifas__planes__pro__titulo {

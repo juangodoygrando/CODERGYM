@@ -195,12 +195,12 @@
   }
 
   .tarifas__planes {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns:1fr; 
     gap: 15px;
   }
 
   .tarifas__planes__fitness__segunHorario {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     }
 
   .tarifas__planes__fitness__titulo,
