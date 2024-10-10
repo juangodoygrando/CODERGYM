@@ -180,12 +180,17 @@
     grid-template-columns: 1fr;
     gap: 15px;
   }
+  .tarifas-contenedor {
+    width: 95%; 
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
   .main {
     width: 90%;
     padding: 15px;
+    
   }
 
   .tarifas__titulo h1 {
