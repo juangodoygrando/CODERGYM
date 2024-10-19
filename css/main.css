@@ -1,12 +1,187 @@
 @charset "UTF-8";
-/*Abstracts*/
+:root,
+[data-bs-theme="light"] {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #2d3f51;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 45, 63, 81;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-primary-text-emphasis: #121920;
+  --bs-secondary-text-emphasis: #2b2f32;
+  --bs-success-text-emphasis: #0a3622;
+  --bs-info-text-emphasis: #055160;
+  --bs-warning-text-emphasis: #664d03;
+  --bs-danger-text-emphasis: #58151c;
+  --bs-light-text-emphasis: #495057;
+  --bs-dark-text-emphasis: #495057;
+  --bs-primary-bg-subtle: #d5d9dc;
+  --bs-secondary-bg-subtle: #e2e3e5;
+  --bs-success-bg-subtle: #d1e7dd;
+  --bs-info-bg-subtle: #cff4fc;
+  --bs-warning-bg-subtle: #fff3cd;
+  --bs-danger-bg-subtle: #f8d7da;
+  --bs-light-bg-subtle: #fcfcfd;
+  --bs-dark-bg-subtle: #ced4da;
+  --bs-primary-border-subtle: #abb2b9;
+  --bs-secondary-border-subtle: #c4c8cb;
+  --bs-success-border-subtle: #a3cfbb;
+  --bs-info-border-subtle: #9eeaf9;
+  --bs-warning-border-subtle: #ffe69c;
+  --bs-danger-border-subtle: #f1aeb5;
+  --bs-light-border-subtle: #e9ecef;
+  --bs-dark-border-subtle: #adb5bd;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg: #fff;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-emphasis-color: #000;
+  --bs-emphasis-color-rgb: 0, 0, 0;
+  --bs-secondary-color: rgba(33, 37, 41, 0.75);
+  --bs-secondary-color-rgb: 33, 37, 41;
+  --bs-secondary-bg: #e9ecef;
+  --bs-secondary-bg-rgb: 233, 236, 239;
+  --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+  --bs-tertiary-color-rgb: 33, 37, 41;
+  --bs-tertiary-bg: #f8f9fa;
+  --bs-tertiary-bg-rgb: 248, 249, 250;
+  --bs-heading-color: inherit;
+  --bs-link-color: #2d3f51;
+  --bs-link-color-rgb: 45, 63, 81;
+  --bs-link-decoration: underline;
+  --bs-link-hover-color: #243241;
+  --bs-link-hover-color-rgb: 36, 50, 65;
+  --bs-code-color: #d63384;
+  --bs-highlight-color: #212529;
+  --bs-highlight-bg: #fff3cd;
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #dee2e6;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.375rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.5rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-xxl: 2rem;
+  --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+  --bs-border-radius-pill: 50rem;
+  --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  --bs-focus-ring-width: 0.25rem;
+  --bs-focus-ring-opacity: 0.25;
+  --bs-focus-ring-color: rgba(45, 63, 81, 0.25);
+  --bs-form-valid-color: #198754;
+  --bs-form-valid-border-color: #198754;
+  --bs-form-invalid-color: #dc3545;
+  --bs-form-invalid-border-color: #dc3545; }
+
+[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --bs-body-color: #dee2e6;
+  --bs-body-color-rgb: 222, 226, 230;
+  --bs-body-bg: #212529;
+  --bs-body-bg-rgb: 33, 37, 41;
+  --bs-emphasis-color: #fff;
+  --bs-emphasis-color-rgb: 255, 255, 255;
+  --bs-secondary-color: rgba(222, 226, 230, 0.75);
+  --bs-secondary-color-rgb: 222, 226, 230;
+  --bs-secondary-bg: #343a40;
+  --bs-secondary-bg-rgb: 52, 58, 64;
+  --bs-tertiary-color: rgba(222, 226, 230, 0.5);
+  --bs-tertiary-color-rgb: 222, 226, 230;
+  --bs-tertiary-bg: #2b3035;
+  --bs-tertiary-bg-rgb: 43, 48, 53;
+  --bs-primary-text-emphasis: #818c97;
+  --bs-secondary-text-emphasis: #a7acb1;
+  --bs-success-text-emphasis: #75b798;
+  --bs-info-text-emphasis: #6edff6;
+  --bs-warning-text-emphasis: #ffda6a;
+  --bs-danger-text-emphasis: #ea868f;
+  --bs-light-text-emphasis: #f8f9fa;
+  --bs-dark-text-emphasis: #dee2e6;
+  --bs-primary-bg-subtle: #090d10;
+  --bs-secondary-bg-subtle: #161719;
+  --bs-success-bg-subtle: #051b11;
+  --bs-info-bg-subtle: #032830;
+  --bs-warning-bg-subtle: #332701;
+  --bs-danger-bg-subtle: #2c0b0e;
+  --bs-light-bg-subtle: #343a40;
+  --bs-dark-bg-subtle: #1a1d20;
+  --bs-primary-border-subtle: #1b2631;
+  --bs-secondary-border-subtle: #41464b;
+  --bs-success-border-subtle: #0f5132;
+  --bs-info-border-subtle: #087990;
+  --bs-warning-border-subtle: #997404;
+  --bs-danger-border-subtle: #842029;
+  --bs-light-border-subtle: #495057;
+  --bs-dark-border-subtle: #343a40;
+  --bs-heading-color: inherit;
+  --bs-link-color: #818c97;
+  --bs-link-hover-color: #9aa3ac;
+  --bs-link-color-rgb: 129, 140, 151;
+  --bs-link-hover-color-rgb: 154, 163, 172;
+  --bs-code-color: #e685b5;
+  --bs-highlight-color: #dee2e6;
+  --bs-highlight-bg: #664d03;
+  --bs-border-color: #495057;
+  --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+  --bs-form-valid-color: #75b798;
+  --bs-form-valid-border-color: #75b798;
+  --bs-form-invalid-color: #ea868f;
+  --bs-form-invalid-border-color: #ea868f; }
+
 /* COLORES */
-/*Base*/
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: "Josefin Sans", system-ui; }
+  box-sizing: border-box; }
+
+* {
+  font-family: "Josefin Sans"; }
 
 body {
   height: 100%;
@@ -16,83 +191,30 @@ body {
 main {
   margin: 0px auto 80px; }
 
-/* Layout */
-header {
-  display: flex;
-  justify-content: space-between;
-  min-height: 80px;
-  background-image: linear-gradient(to bottom, darkcyan 65%, #eeeeee);
-  align-items: center;
-  padding: 15px;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  font-weight: bold; }
+.navbar-brand img {
+  height: 5rem;
+  width: auto; }
 
-.lista .listaA {
-  display: flex column;
-  list-style: none;
-  display: inline;
-  padding: 0;
-  margin: 0 15px; }
+.navbar {
+  background-color: darkcyan;
+  font-size: 1.5rem;
+  font-weight: 600; }
 
-.logo {
-  display: flex;
-  align-items: center;
-  margin-left: 20px; }
+.custom-navbar-text .nav-link {
+  color: #2c3e50 !important; }
 
-nav a {
-  font-size: 20px;
-  padding-right: 15px;
-  color: #eeeeee;
-  text-decoration: none;
-  cursor: pointer; }
+.custom-navbar-text .navbar-toggler {
+  border-color: #2c3e50; }
 
-nav a:hover {
-  color: #2c3e50;
-  transform: scale(1.2); }
+.custom-navbar-text .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%232C3E50' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
-.logo-nombre {
-  color: #eeeeee;
-  font-size: 70px;
-  margin-left: 20px;
-  font-weight: bold; }
-
-.logo-nombre:hover {
-  color: #2c3e50;
-  cursor: pointer;
-  transform: scaleX(1.1); }
-
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 10px; }
-  .lista {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 0;
-    margin: 0; }
-  .lista .listaA {
-    margin: 10px 0; }
-  .logo-nombre {
-    font-size: 50px;
-    margin-bottom: 10px; }
-  nav a {
-    font-size: 18px;
-    padding: 5px 0; } }
-
-@media (max-width: 480px) {
-  header {
-    padding: 5px; }
-  .logo-nombre {
-    font-size: 40px; }
-  nav a {
-    font-size: 16px; } }
+.custom-navbar-text .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none; }
 
 footer {
-  background-image: linear-gradient(to top, darkcyan 65%, #eeeeee);
+  background-color: darkcyan;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -157,7 +279,6 @@ footer {
   .copyright h6 {
     font-size: 16px; } }
 
-/* Componentes */
 .mainIndex {
   width: 100%; }
 
@@ -219,7 +340,7 @@ footer {
 
 .clases__personalizadas {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 50px; }
 
@@ -247,40 +368,36 @@ footer {
   border-radius: 5px;
   font-size: 1.5rem;
   cursor: pointer;
-  text-align: center;
-  border: none; }
+  border: none;
+  justify-items: center; }
 
 .clases__personalizadas__texto__btn:hover {
   transform: scale(1.1); }
 
 @media (max-width: 480px) {
   .imagenContenedor {
-    height: 35vh;
-    margin: 20px auto; }
+    height: 60vh !important;
+    margin: 0; }
   .textoEstasListo {
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: auto;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 8px; }
+    border-radius: 8px;
+    top: 40%;
+    transform: translate(-50%, -40%); }
   .textoEstasListo h2 {
     font-size: 30px; }
   .textoEstasListo p {
     font-size: 18px; }
   .bottonMiraNuestrasTarifas,
   .bottonContactanos {
-    padding: 8px 15px;
-    font-size: 16px; }
+    padding: 8px 12px;
+    font-size: 12px;
+    margin: 5px; }
   .clases__personalizadas {
     flex-direction: column;
-    padding: 20px; }
-  .clases__personalizadas__imagen {
-    width: 90%;
-    max-width: 100%; }
-  .clases__personalizadas__texto {
-    width: 100%;
-    padding-left: 0;
-    margin-top: 20px; }
+    padding: 0 !important; }
   .clases__personalizadas__texto__titulo {
     font-size: 1.5rem; }
   .clases__personalizadas__texto__btn {
@@ -299,22 +416,25 @@ footer {
     padding: 10px 18px;
     font-size: 18px; }
   .clases__personalizadas {
-    flex-direction: column;
-    padding: 40px; }
+    flex-direction: column; }
   .clases__personalizadas__imagen {
-    width: 80%; }
+    width: 90%;
+    max-width: 100%; }
   .clases__personalizadas__texto {
-    width: 100%;
+    display: flex;
+    width: 90%;
     padding-left: 0;
-    margin-top: 20px; }
+    margin: 15px;
+    justify-content: space-between; }
   .clases__personalizadas__texto__titulo {
-    font-size: 1.8rem; }
+    font-size: 1.5rem;
+    margin: 20px;
+    justify-content: end; }
   .clases__personalizadas__texto__btn {
-    font-size: 1.4rem; } }
+    font-size: 1.2rem;
+    margin: 10px; } }
 
 .main {
-  width: 100%;
-  width: 75%;
   padding: 20px;
   background-color: #eeeeee;
   border-radius: 10px; }
@@ -341,6 +461,15 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
 
+.tarifas__planes__fitness__segunHorario__mañana p,
+.tarifas__planes__fitness__segunHorario__tarde p {
+  margin-bottom: 25px;
+  text-align: center; }
+
+.tarifas__planes__fitness__segunHorario__mañana strong,
+.tarifas__planes__fitness__segunHorario__tarde strong {
+  margin: 25px; }
+
 .tarifas__planes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -364,8 +493,9 @@ footer {
 .tarifas__planes__pro__titulo {
   font-size: 40px;
   display: flex;
-  justify-content: start;
-  margin-bottom: 10px; }
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: 900; }
 
 .tarifas__planes__fitness__incluye,
 .tarifas__planes__performance__incluye,
@@ -414,12 +544,14 @@ footer {
 .tarifas__matricula__titulo {
   font-size: 45px;
   margin: 30px;
-  padding: 30px; }
+  padding: 30px;
+  font-weight: 900; }
 
 .tarifas__matricula__precio {
   font-size: 70px;
   margin: 25px;
-  color: darkcyan; }
+  color: darkcyan;
+  font-weight: 600; }
 
 .tarifas__matricula__pagoUnico {
   text-align: end;
@@ -433,9 +565,240 @@ footer {
   margin-top: 20px; }
 
 .servicios-adicionales__titulo {
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 15px;
+  text-align: center;
+  font-weight: 900; }
+
+.servicios-adicionales__lista {
+  list-style: none;
+  padding: 0; }
+
+.servicio {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; }
+
+.servicio:last-child {
+  border-bottom: none; }
+
+.servicio__nombre {
+  font-size: 25px;
+  flex: 1;
+  font-weight: bold; }
+
+.servicio__precio {
+  font-size: 25px;
+  color: #2c3e50;
+  text-align: right;
+  list-style: none; }
+
+@media (max-width: 480px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden; }
+  .main {
+    width: 100%;
+    padding: 5px; }
+  .tarifas__titulo h1 {
+    font-size: 40px;
+    margin: 15px;
+    padding: 15px; }
+  .tarifas-contenedor {
+    width: 100%;
+    margin: 0; }
+  .tarifas__planes__fitness__segunHorario__mañana p,
+  .tarifas__planes__fitness__segunHorario__tarde p {
+    padding: 0;
+    white-space: nowrap; } }
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    padding: 15px; }
+  .tarifas__titulo h1 {
+    font-size: 45px;
+    margin: 20px;
+    padding: 20px; }
+  .tarifas__planes {
+    grid-template-columns: 1fr;
+    gap: 15px; }
+  .tarifas__planes__fitness__segunHorario {
+    grid-template-columns: repeat(2, 1fr); }
+  .tarifas__planes__fitness__titulo,
+  .tarifas__planes__performance__titulo,
+  .tarifas__planes__pro__titulo {
+    font-size: 30px; }
+  .tarifas__planes__fitness__incluye,
+  .tarifas__planes__performance__incluye,
+  .tarifas__planes__pro__incluye {
+    font-size: 1.4rem; }
+  .tarifas__planes__fitness__incluye__lista,
+  .tarifas__planes__performance__incluye__lista,
+  .tarifas__planes__pro__incluye__lista,
+  .tarifas__planes__fitness__segunHorario__tarde,
+  .tarifas__planes__fitness__segunHorario__mañana {
+    font-size: 1.2rem; }
+  .tarifas__planes__fitness__precios,
+  .tarifas__planes__performance__precios,
+  .tarifas__planes__pro__precios {
+    font-size: 40px; }
+  .tarifas__matricula__titulo {
+    font-size: 35px;
+    margin: 20px;
+    padding: 20px; }
+  .tarifas__matricula__precio {
+    font-size: 50px;
+    margin: 20px; }
+  .tarifas__matricula__pagoUnico {
+    font-size: 18px; }
+  .servicios__adicionales {
+    padding: 15px; }
+  .servicios-adicionales__titulo {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .servicio {
+    padding: 8px 0; }
+  .servicio__nombre,
+  .servicio__precio {
+    font-size: 20px; } }
+
+.main {
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 10px; }
+
+.tarifas__titulo h1 {
+  text-align: center;
+  font-size: 60px;
+  margin: 25px;
+  padding: 25px;
+  font-weight: 800; }
+
+.tarifas__planes__fitness,
+.tarifas__planes__performance,
+.tarifas__planes__pro {
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 5px 5px 10px darkcyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; }
+
+.tarifas__planes__fitness__segunHorario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.tarifas__planes__fitness__segunHorario__mañana p,
+.tarifas__planes__fitness__segunHorario__tarde p {
+  margin-bottom: 25px;
   text-align: center; }
+
+.tarifas__planes__fitness__segunHorario__mañana strong,
+.tarifas__planes__fitness__segunHorario__tarde strong {
+  margin: 25px; }
+
+.tarifas__planes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px; }
+
+.tarifas__planes li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; }
+
+.tarifas__planes__fitness__titulo,
+.tarifas__planes__performance__titulo,
+.tarifas__planes__pro__titulo {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: 900; }
+
+.tarifas__planes__fitness__incluye,
+.tarifas__planes__performance__incluye,
+.tarifas__planes__pro__incluye {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column; }
+
+.tarifas__planes__fitness__incluye__lista,
+.tarifas__planes__performance__incluye__lista,
+.tarifas__planes__pro__incluye__lista,
+.tarifas__planes__fitness__segunHorario__tarde,
+.tarifas__planes__fitness__segunHorario__mañana {
+  font-size: 1.4rem; }
+
+.tarifas__planes__fitness__precios,
+.tarifas__planes__performance__precios,
+.tarifas__planes__pro__precios {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 50px;
+  color: #2c3e50;
+  margin-top: auto; }
+
+.precio70,
+.precio85,
+.precio100,
+.precio140 {
+  background-color: darkcyan;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  flex: 1; }
+
+.precio70,
+.precio85 {
+  margin-top: 20px; }
+
+.tarifas__matricula {
+  background-color: white;
+  box-shadow: 5px 5px 10px darkcyan;
+  text-align: center; }
+
+.tarifas__matricula__titulo {
+  font-size: 45px;
+  margin: 30px;
+  padding: 30px;
+  font-weight: 900; }
+
+.tarifas__matricula__precio {
+  font-size: 70px;
+  margin: 25px;
+  color: darkcyan;
+  font-weight: 600; }
+
+.tarifas__matricula__pagoUnico {
+  text-align: end;
+  font-size: 20px; }
+
+.servicios__adicionales {
+  background-color: white;
+  box-shadow: 5px 5px 10px darkcyan;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px; }
+
+.servicios-adicionales__titulo {
+  font-size: 40px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 900; }
 
 .servicios-adicionales__lista {
   list-style: none;
@@ -463,19 +826,23 @@ footer {
 
 @media (max-width: 480px) {
   .main {
-    width: 90%;
-    padding: 10px; }
+    width: 100%;
+    padding: 5px; }
   .tarifas__titulo h1 {
     font-size: 40px;
     margin: 15px;
     padding: 15px; }
-  .tarifas__planes {
-    grid-template-columns: 1fr;
-    gap: 15px; } }
+  .tarifas-contenedor {
+    width: 100%;
+    margin: 0; }
+  .tarifas__planes__fitness__segunHorario__mañana p,
+  .tarifas__planes__fitness__segunHorario__tarde p {
+    padding: 0;
+    white-space: nowrap; } }
 
 @media (max-width: 768px) {
   .main {
-    width: 90%;
+    width: 100%;
     padding: 15px; }
   .tarifas__titulo h1 {
     font-size: 45px;
@@ -621,7 +988,10 @@ body {
   .galeria__titulo,
   .instalacionesTitulo,
   .instalacionesTexto {
-    font-size: 30px; }
+    font-size: 1.8rem;
+    text-align: center; }
+  .nuestras__instalaciones {
+    font-weight: bold; }
   .galeria__fotos {
     grid-template-columns: 1fr;
     gap: 8px; }
@@ -644,7 +1014,8 @@ body {
   .galeria__titulo,
   .instalacionesTitulo,
   .instalacionesTexto {
-    font-size: 45px; }
+    font-size: 1.5rem;
+    text-align: center; }
   .galeria__fotos {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px; }

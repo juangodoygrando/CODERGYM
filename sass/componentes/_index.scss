@@ -67,7 +67,7 @@
 
 .clases__personalizadas {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 50px;
 }
@@ -99,8 +99,8 @@
   border-radius: 5px;
   font-size: 1.5rem;
   cursor: pointer;
-  text-align: center;
   border: none;
+  justify-items: center;
 }
 
 .clases__personalizadas__texto__btn:hover {
@@ -109,15 +109,19 @@
 
 @media (max-width: 480px) {
   .imagenContenedor {
-    height: 35vh;
-    margin: 20px auto;
+    height: 60vh !important;
+    margin: 0;
   }
   .textoEstasListo {
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: auto;
     padding: 10px; 
     background-color: rgba(0, 0, 0, 0.8); 
     border-radius: 8px;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    
+    
   }
 
   .textoEstasListo h2 {
@@ -130,26 +134,16 @@
 
   .bottonMiraNuestrasTarifas,
   .bottonContactanos {
-    padding: 8px 15px;
-    font-size: 16px;
+    padding: 8px 12px;
+    font-size: 12px;
+    margin: 5px;
   }
 
   .clases__personalizadas {
     flex-direction: column;
-    padding: 20px;
+    padding: 0 !important;   
   }
-
-  .clases__personalizadas__imagen {
-    width: 90%;
-    max-width: 100%;
-  }
-
-  .clases__personalizadas__texto {
-    width: 100%;
-    padding-left: 0;
-    margin-top: 20px;
-  }
-
+  
   .clases__personalizadas__texto__titulo {
     font-size: 1.5rem;
   }
@@ -181,24 +175,31 @@
 
   .clases__personalizadas {
     flex-direction: column;
-    padding: 40px;
+    
   }
 
   .clases__personalizadas__imagen {
-    width: 80%;
+    width: 90%;
+    max-width: 100%;
   }
 
   .clases__personalizadas__texto {
-    width: 100%;
+    display: flex;
+    width: 90%;
     padding-left: 0;
-    margin-top: 20px;
+    margin: 15px;
+    justify-content: space-between;
   }
 
   .clases__personalizadas__texto__titulo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin: 20px;
+    justify-content: end;
   }
 
   .clases__personalizadas__texto__btn {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    margin: 10px;
+
   }
 }

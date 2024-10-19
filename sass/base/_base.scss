@@ -1,7 +1,13 @@
+*{
+    font-family: "Josefin Sans";
+     
+}
+
 body {
     height: 100%;
     background-color: $colorBody;
     color: $colorFondoLetras;
+    
 }
 main {
     margin: 0px auto 80px;
