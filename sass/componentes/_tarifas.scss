@@ -30,7 +30,7 @@
 }
 .tarifas__planes__fitness__segunHorario__mañana,
 .tarifas__planes__fitness__segunHorario__tarde {
-  width: 49%; 
+  width: 49%;
   padding: 5px;
   box-sizing: border-box;
 }
@@ -188,7 +188,7 @@
     padding: 10px;
   }
   .tarifas__planes {
-    display:block;
+    display: block;
   }
 
   .tarifas__titulo h1 {
@@ -199,7 +199,6 @@
 
   .tarifas-contenedor {
     width: 100%;
-    
   }
 
   .tarifas__planes__fitness__segunHorario__mañana p,
@@ -208,8 +207,8 @@
     white-space: nowrap;
   }
   .tarifas__planes__fitness,
-.tarifas__planes__performance,
-.tarifas__planes__pro {
+  .tarifas__planes__performance,
+  .tarifas__planes__pro {
     margin-bottom: 15px;
   }
 }
