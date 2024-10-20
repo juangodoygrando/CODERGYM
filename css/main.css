@@ -785,7 +785,18 @@ body {
   .listaIntsalaciones strong {
     font-size: 25px; }
   .listaIntsalaciones li {
-    font-size: 18px; } }
+    font-size: 18px; }
+  img {
+    transition: none; }
+  img:hover {
+    animation: scale-revert 1.5s forwards; }
+  @keyframes scale-revert {
+    0% {
+      transform: scale(1.2); }
+    99% {
+      transform: scale(1.2); }
+    100% {
+      transform: scale(1); } } }
 
 @media (max-width: 768px) {
   .nuestras__instalaciones,
@@ -813,20 +824,24 @@ body {
 body {
   background-color: #eeeeee; }
 
-.container {
-  max-width: 1200px; }
-
 .contact-form,
 .contact-info {
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 5px 10px darkcyan;
-  padding: 20px;
+  padding: 0px;
   margin: 0px; }
 
 h2 {
   margin-bottom: 20px;
   color: #2c3e50; }
+
+#contDejanosTusDatos,
+#contVisitanos {
+  padding: 15px; }
+
+#contDejanosTusDatos {
+  margin-right: 30px; }
 
 .map-container {
   width: 100%;
@@ -842,6 +857,19 @@ h2 {
 
 .btn:hover {
   background-color: darkcyan; }
+
+@media (max-width: 768px) {
+  .map-container {
+    height: auto; }
+  #mapa {
+    height: 250px; }
+  .container {
+    max-width: 90%; }
+  #contDejanosTusDatos,
+  #contVisitanos {
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-right: 0; } }
 
 .clasesDirigidas {
   padding: 20px; }

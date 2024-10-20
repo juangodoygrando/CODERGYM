@@ -114,14 +114,12 @@
   }
   .textoEstasListo {
     width: 90%;
-    height:auto;
-    padding: 0px; 
-    background-color: rgba(0, 0, 0, 0.8); 
+    height: auto;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     top: 37%;
     transform: translate(-50%, -36%);
-    
-    
   }
 
   .textoEstasListo h2 {
@@ -141,9 +139,9 @@
 
   .clases__personalizadas {
     flex-direction: column;
-    padding: 0 !important;   
+    padding: 0 !important;
   }
-  
+
   .clases__personalizadas__texto__titulo {
     font-size: 1.5rem;
   }
@@ -175,7 +173,6 @@
 
   .clases__personalizadas {
     flex-direction: column;
-    
   }
 
   .clases__personalizadas__imagen {
@@ -200,6 +197,5 @@
   .clases__personalizadas__texto__btn {
     font-size: 1.2rem;
     margin: 10px;
-
   }
 }
