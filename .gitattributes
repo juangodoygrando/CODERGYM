@@ -1,0 +1,20 @@
+* text=auto
+
+*.css text eol=lf
+
+*.html text eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.svg binary
+
+*.woff binary
+*.woff2 binary
+*.ttf binary
+
+
+*.md text eol=lf
+
+
+
