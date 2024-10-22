@@ -269,7 +269,9 @@ footer {
     height: 35px;
     margin: 0 5px; }
   .copyright h6 {
-    font-size: 12px; } }
+    font-size: 0.8rem;
+    display: flex;
+    text-align: center; } }
 
 @media only screen and (min-width: 768px) {
   .redesSociales a {
@@ -375,21 +377,15 @@ footer {
   transform: scale(1.1); }
 
 @media (max-width: 480px) {
+  .imagenInicio {
+    display: flex; }
   .imagenContenedor {
-    height: 60vh !important;
-    margin: 0; }
-  .textoEstasListo {
-    width: 90%;
-    height: auto;
-    padding: 0px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    top: 37%;
-    transform: translate(-50%, -36%); }
+    height: 80vh;
+    margin: 30px auto; }
   .textoEstasListo h2 {
-    font-size: 1rem; }
+    font-size: 1.4rem; }
   .textoEstasListo p {
-    font-size: 1.5rem; }
+    font-size: 0.8rem; }
   .bottonMiraNuestrasTarifas,
   .bottonContactanos {
     padding: 8px 12px;
@@ -405,7 +401,7 @@ footer {
 
 @media (max-width: 768px) {
   .imagenContenedor {
-    height: 49vh;
+    height: 80vh;
     margin: 30px auto; }
   .textoEstasListo h2 {
     font-size: 2rem; }
@@ -739,8 +735,7 @@ body {
 .instalacionesTexto {
   text-align: center;
   font-size: 35px;
-  margin-bottom: 80px;
-  margin-top: 80px; }
+  margin-bottom: 80px; }
 
 .listaIntsalaciones {
   list-style: none;
@@ -776,12 +771,8 @@ body {
     gap: 8px; }
   .fotos__instalaciones {
     height: 250px; }
-  .video__instalaciones iframe {
-    width: 100%;
-    min-height: 250px; }
   .instalacionesExplicacion {
-    max-width: 100%;
-    padding: 10px; }
+    max-width: 100%; }
   .listaIntsalaciones strong {
     font-size: 25px; }
   .listaIntsalaciones li {
@@ -822,7 +813,8 @@ body {
     font-size: 20px; } }
 
 body {
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  height: auto; }
 
 .contact-form,
 .contact-info {
@@ -859,8 +851,6 @@ h2 {
   background-color: darkcyan; }
 
 @media (max-width: 768px) {
-  .map-container {
-    height: auto; }
   #mapa {
     height: 250px; }
   .container {
@@ -869,7 +859,9 @@ h2 {
   #contVisitanos {
     margin-bottom: 15px;
     padding: 10px;
-    margin-right: 0; } }
+    margin-right: 0; }
+  #contVisitanos {
+    margin-bottom: 65px; } }
 
 .clasesDirigidas {
   padding: 20px; }

@@ -78,7 +78,7 @@ body {
   text-align: center;
   font-size: 35px;
   margin-bottom: 80px;
-  margin-top: 80px;
+  
 }
 
 .listaIntsalaciones {
@@ -124,14 +124,9 @@ body {
     height: 250px;
   }
 
-  .video__instalaciones iframe {
-    width: 100%;
-    min-height: 250px;
-  }
-
   .instalacionesExplicacion {
     max-width: 100%;
-    padding: 10px;
+    
   }
 
   .listaIntsalaciones strong {

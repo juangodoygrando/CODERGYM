@@ -1,5 +1,6 @@
 body {
   background-color: $colorBody;
+  height: auto;
 }
 
 .contact-form,
@@ -9,6 +10,7 @@ body {
   box-shadow: $boxSahdowImagenes;
   padding: 0px;
   margin: 0px;
+  
 }
 
 h2 {
@@ -40,10 +42,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .map-container {
-    height: auto;
-  }
-
+  
   #mapa {
     height: 250px;
   }
@@ -55,5 +54,8 @@ h2 {
     margin-bottom: 15px;
     padding: 10px;
     margin-right: 0;
+  }
+  #contVisitanos{
+    margin-bottom: 65px;
   }
 }

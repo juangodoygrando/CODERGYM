@@ -108,26 +108,21 @@
 }
 
 @media (max-width: 480px) {
-  .imagenContenedor {
-    height: 60vh !important;
-    margin: 0;
-  }
-  .textoEstasListo {
-    width: 90%;
-    height: auto;
-    padding: 0px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    top: 37%;
-    transform: translate(-50%, -36%);
-  }
 
+  .imagenInicio{
+    display:flex
+  }
+  .imagenContenedor {
+    height: 80vh ;
+    margin: 30px auto;
+  }
+  
   .textoEstasListo h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .textoEstasListo p {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
 
   .bottonMiraNuestrasTarifas,
@@ -153,7 +148,7 @@
 
 @media (max-width: 768px) {
   .imagenContenedor {
-    height: 49vh;
+    height: 80vh;
     margin: 30px auto;
   }
 
