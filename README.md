@@ -1,34 +1,31 @@
-💪 CoderGym
+# 💪 **CoderGym**  
 
-**CoderGym** es una página web en desarrollo diseñada para ofrecer una experiencia inmersiva a los usuarios interesados en inscribirse en un gimnasio. El sitio proporciona información detallada sobre las instalaciones, clases personalizadas y tarifas de membresía. Con un diseño atractivo y responsivo, CoderGym busca ser un portal completo y fácil de navegar para los futuros miembros del gimnasio.
-
----
-
-🚀 Tecnologías Utilizadas
-
-🖥️ **HTML5**: Estructura semántica y contenido de las páginas.
-
-🎨 **CSS3**: Estilos modernos y diseño responsivo, utilizando Flexbox y Grid para una disposición óptima de los elementos.
-
-📱 **Bootstrap**: Framework CSS para facilitar el diseño adaptable a dispositivos móviles.
-
-🗂️ **Git**: Control de versiones para gestionar el desarrollo del proyecto.
+**CoderGym** es una página web en desarrollo diseñada para ofrecer una experiencia inmersiva a los usuarios interesados en inscribirse en un gimnasio. Este proyecto no solo busca atraer a futuros miembros del gimnasio con información detallada sobre instalaciones, clases y tarifas, sino también sirve como una oportunidad educativa para aplicar y perfeccionar habilidades de desarrollo web.  
 
 ---
 
-📊 Funcionalidades
-
-✅ Página de inicio con la mision del local y ofertas de clases personalizadas.
-
-✅ Sección de tarifas con detalles de los distintos planes de membresía.
-
-✅ Información sobre clases grupales y personalizadas.
-
-✅ Diseño responsivo que garantiza una experiencia de usuario fluida en dispositivos móviles y de escritorio.
+## 🚀 **Tecnologías Utilizadas**  
+- 🖥️ **HTML5**: Proporciona una estructura semántica y bien organizada para las páginas.  
+- 🎨 **CSS3**: Estilos modernos con un enfoque en Flexbox y Grid para una disposición óptima y un diseño responsivo.  
+- 📱 **Bootstrap**: Framework CSS que acelera el desarrollo y garantiza un diseño adaptable a dispositivos móviles.  
+- 🗂️ **Git**: Control de versiones para una gestión eficiente y colaborativa del proyecto.  
 
 ---
 
-🛠️ Estado del Proyecto
+## 🌟 **Funcionalidades Principales**  
+- ✅ **Página de inicio**: Presenta la misión del gimnasio y las ofertas de clases personalizadas.  
+- ✅ **Sección de tarifas**: Detalla los distintos planes de membresía, incluyendo precios y beneficios.  
+- ✅ **Información sobre clases**: Describe las opciones de clases grupales y personalizadas, con horarios y niveles de intensidad.  
+- ✅ **Diseño responsivo**: Garantiza una experiencia de usuario fluida tanto en dispositivos móviles como en escritorio.  
+- ✅ **Galería multimedia**:  Muestra imágenes y videos de las instalaciones y actividades del gimnasio.  
 
-**CoderGym** está en una fase de desarrollo activa. Actualmente, se están finalizando las secciones de tarifas y clases, y se prevé agregar más contenido multimedia y optimización de la interfaz en futuras versiones.
+---
 
+
+## 🎯 **Objetivo del Proyecto**  
+Este proyecto no solo busca ser un portal atractivo para los clientes del gimnasio, sino también un espacio de aprendizaje para implementar las mejores prácticas de diseño web, incluyendo:  
+- Creación de estructuras semánticas con HTML.  
+- Diseño avanzado con CSS y Bootstrap.  
+- Optimización de la experiencia de usuario para múltiples dispositivos.  
+
+---
