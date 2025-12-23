@@ -1,16 +1,19 @@
 *{
-    font-family: "Josefin Sans";
+    font-family: "Josefin Sans", sans-serif;
      
 }
 
 body {
-    height: 100%;
-    background-color: $colorBody;
-    color: $colorFondoLetras;
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $colorBody;
+  color: $colorFondoLetras;
     
 }
 main {
-    margin: 0px auto 80px;
+   flex: 1; 
+  padding-bottom: 20px;
     
 }
 
