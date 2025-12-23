@@ -1,93 +1,97 @@
 .main {
-  padding: 10px;
+  padding: 15px;
   background-color: $colorBody;
-  border-radius: 10px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .tarifas__titulo h1 {
   text-align: center;
-  font-size: 60px;
-  margin: 25px;
-  padding: 25px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 20px 0;
+  padding: 15px;
   font-weight: 800;
+}
+
+.tarifas__planes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .tarifas__planes__fitness,
 .tarifas__planes__performance,
 .tarifas__planes__pro {
-  background-color: #f9f9f9;
-  padding: 10px;
-  box-shadow: $boxSahdowImagenes;
-  display: flex;
-  flex-direction: column;
-}
-.tarifas__planes__fitness__segunHorario {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0;
-  list-style: none;
-}
-.tarifas__planes__fitness__segunHorario__mañana,
-.tarifas__planes__fitness__segunHorario__tarde {
-  width: 49%;
-  padding: 5px;
-  box-sizing: border-box;
-}
-.tarifas__planes__fitness__segunHorario__mañana p,
-.tarifas__planes__fitness__segunHorario__tarde p {
-  margin: 5px;
-  text-align: center;
-}
-
-.tarifas__planes__fitness__segunHorario__mañana strong,
-.tarifas__planes__fitness__segunHorario__tarde strong {
-  margin: 25px;
-}
-
-.tarifas__planes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.tarifas__planes li {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 139, 139, 0.2);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
 }
+
 .tarifas__planes__fitness__titulo,
 .tarifas__planes__performance__titulo,
 .tarifas__planes__pro__titulo {
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  text-align: center;
+  margin-bottom: 15px;
   font-weight: 900;
+  color: $colorNavFooter;
 }
 
 .tarifas__planes__fitness__incluye,
 .tarifas__planes__performance__incluye,
 .tarifas__planes__pro__incluye {
-  font-size: 1.6rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
+  font-weight: 600;
 }
+
 .tarifas__planes__fitness__incluye__lista,
 .tarifas__planes__performance__incluye__lista,
-.tarifas__planes__pro__incluye__lista,
-.tarifas__planes__fitness__segunHorario__tarde,
-.tarifas__planes__fitness__segunHorario__mañana {
-  font-size: 1.4rem;
+.tarifas__planes__pro__incluye__lista {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  padding-left: 20px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+.tarifas__planes__fitness__segunHorario {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   padding: 0;
+  margin: 15px 0;
+  list-style: none;
+  gap: 10px;
+}
+
+.tarifas__planes__fitness__segunHorario__mañana,
+.tarifas__planes__fitness__segunHorario__tarde {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 139, 139, 0.1);
+  border-radius: 8px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+
+  strong {
+    display: block;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin-bottom: 8px;
+    color: $colorNavFooter;
+  }
+
+  p {
+    margin: 3px 0;
+    font-size: clamp(0.75rem, 1.8vw, 0.95rem);
+  }
 }
 
 .tarifas__planes__fitness__precios,
@@ -95,10 +99,9 @@
 .tarifas__planes__pro__precios {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  font-size: 50px;
-  color: $colorFondoLetras;
+  gap: 15px;
   margin-top: auto;
+  padding-top: 15px;
 }
 
 .precio70,
@@ -106,51 +109,54 @@
 .precio100,
 .precio140 {
   background-color: $colorNavFooter;
+  color: white;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px 20px;
   text-align: center;
-  flex: 1;
-}
-.precio70,
-.precio85 {
-  margin-top: 20px;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: bold;
+  min-width: 80px;
 }
 
 .tarifas__matricula {
   background-color: white;
-  box-shadow: $boxSahdowImagenes;
+  box-shadow: 0 4px 15px rgba(0, 139, 139, 0.2);
+  border-radius: 10px;
   text-align: center;
+  padding: 25px 20px;
+  margin-bottom: 20px;
 }
+
 .tarifas__matricula__titulo {
-  font-size: 45px;
-  margin: 30px;
-  padding: 30px;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 15px;
   font-weight: 900;
 }
 
 .tarifas__matricula__precio {
-  font-size: 70px;
-  margin: 25px;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   color: $colorNavFooter;
-  font-weight: 600;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
+
 .tarifas__matricula__pagoUnico {
-  text-align: end;
-  font-size: 20px;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: #666;
 }
 
 .servicios__adicionales {
   background-color: white;
-  box-shadow: $boxSahdowImagenes;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 139, 139, 0.2);
+  padding: 25px 20px;
+  border-radius: 10px;
 }
 
 .servicios-adicionales__titulo {
-  font-size: 40px;
-  margin-bottom: 15px;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  margin-bottom: 20px;
   text-align: center;
+  font-weight: 700;
 }
 
 .servicios-adicionales__lista {
@@ -160,9 +166,10 @@
 
 .servicio {
   display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .servicio:last-child {
@@ -170,121 +177,56 @@
 }
 
 .servicio__nombre {
-  font-size: 25px;
-  flex: 1;
-  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 600;
 }
 
 .servicio__precio {
-  font-size: 25px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: $colorFondoLetras;
-  text-align: right;
-  list-style: none;
-}
 
-@media (max-width: 480px) {
-  .main {
-    width: 100%;
-    padding: 10px;
-  }
-  .tarifas__planes {
-    display: block;
+  li {
+    margin: 5px 0;
+    list-style: none;
   }
 
-  .tarifas__titulo h1 {
-    font-size: 40px;
-    margin: 15px;
-    padding: 15px;
-  }
-
-  .tarifas-contenedor {
-    width: 100%;
-  }
-
-  .tarifas__planes__fitness__segunHorario__mañana p,
-  .tarifas__planes__fitness__segunHorario__tarde p {
-    padding: 0;
-    white-space: nowrap;
-  }
-  .tarifas__planes__fitness,
-  .tarifas__planes__performance,
-  .tarifas__planes__pro {
-    margin-bottom: 15px;
+  strong {
+    color: $colorNavFooter;
   }
 }
 
-@media (max-width: 768px) {
-  .main {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .tarifas__titulo h1 {
-    font-size: 45px;
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .tarifas__planes {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .tarifas__planes__fitness__titulo,
-  .tarifas__planes__performance__titulo,
-  .tarifas__planes__pro__titulo {
-    font-size: 30px;
-  }
-
-  .tarifas__planes__fitness__incluye,
-  .tarifas__planes__performance__incluye,
-  .tarifas__planes__pro__incluye {
-    font-size: 1.4rem;
-  }
-
-  .tarifas__planes__fitness__incluye__lista,
-  .tarifas__planes__performance__incluye__lista,
-  .tarifas__planes__pro__incluye__lista,
-  .tarifas__planes__fitness__segunHorario__tarde,
-  .tarifas__planes__fitness__segunHorario__mañana {
-    font-size: 1.2rem;
-  }
-
-  .tarifas__planes__fitness__precios,
-  .tarifas__planes__performance__precios,
-  .tarifas__planes__pro__precios {
-    font-size: 40px;
-  }
-
-  .tarifas__matricula__titulo {
-    font-size: 35px;
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .tarifas__matricula__precio {
-    font-size: 50px;
-    margin: 20px;
-  }
-
-  .tarifas__matricula__pagoUnico {
-    font-size: 18px;
-  }
-  .servicios__adicionales {
-    padding: 15px;
-  }
-
-  .servicios-adicionales__titulo {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
+@media (min-width: 576px) {
   .servicio {
-    padding: 8px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
-  .servicio__nombre,
   .servicio__precio {
-    font-size: 20px;
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .tarifas__planes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tarifas__planes__pro {
+    grid-column: span 2;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tarifas__planes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tarifas__planes__pro {
+    grid-column: span 1;
+    max-width: none;
   }
 }

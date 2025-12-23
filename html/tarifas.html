@@ -1,226 +1,181 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoderGym - Tarifas</title>
+    <link rel="shortcut icon" href="../imagenes/Logofavicom.ico.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
 
-    <link rel="stylesheet" href="../css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <meta
-      name="description"
-      content="CoderGym - Un gimnasio moderno diseñado para que logres tus metas de salud y fitness. Ofrecemos entrenamientos personalizados, equipamiento de última generación y clases grupales dinámicas. ¡Transforma tu cuerpo y mejora tu salud con nosotros!"
-    />
+
+    <link rel="stylesheet" href="../css/main.css" />
 
     <meta
-      name="keywords"
-      content="gimnasio, fitness, entrenamiento personal, clases grupales, salud, bienestar, CoderGym, ejercicios, musculación, entrenamiento funcional, gimnasio moderno, mejorar salud, transformación física"
+      name="description"
+      content="Conoce las tarifas de CoderGym: planes Fitness, Performance y Pro. Matrícula y servicios adicionales. Precios accesibles para todos."
     />
-    <title>CoderGym</title>
+    <meta
+      name="keywords"
+      content="tarifas gimnasio, precios gym, membresía fitness, planes gimnasio, CoderGym"
+    />
   </head>
-  <link rel="shortcut icon" href="../imagenes/Logofavicom.ico.jpg" />
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-md custom-navbar-text">
+      <nav class="navbar navbar-expand-md custom-navbar-text" aria-label="Navegación principal">
         <div class="container-fluid">
           <button
             class="navbar-toggler order-2 order-md-1"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse"
+            aria-controls="navbar-left navbar-right"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Abrir menú de navegación"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div
-            class="collapse navbar-collapse order-3 order-md-2"
-            id="navbar-left"
-          >
+          <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-left">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="./instalaciones.html">
-                  INSTALACIONES</a
-                >
+                <a class="nav-link" href="./instalaciones.html">INSTALACIONES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./clasesDirigidas.html"
-                  >CLASES DIRIGIDAS</a
-                >
+                <a class="nav-link" href="./clasesDirigidas.html">CLASES DIRIGIDAS</a>
               </li>
             </ul>
           </div>
 
-          <a class="navbar-brand order-1 order-md-3" href="../index.html"
-            ><img
-              src="../imagenes/logoNavCoderGym.png"
+          <a class="navbar-brand order-1 order-md-3" href="../index.html">
+            <img
+              src="../imagenes/logoNavCoderGym.svg"
               class="imagenLogoCoder"
-              alt="logoCoderGym"
-          /></a>
+              alt="Logo de CoderGym - Ir a inicio"
+            />
+          </a>
 
-          <div
-            class="collapse navbar-collapse order-4 order-md 4"
-            id="navbar-right"
-          >
+          <div class="collapse navbar-collapse order-4 order-md-4" id="navbar-right">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="./tarifas.html">TARIFAS</a>
+                <a class="nav-link active" aria-current="page" href="./tarifas.html">TARIFAS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./contactanos.html"
-                  >CONTACTANOS</a
-                >
+                <a class="nav-link" href="./contactanos.html">CONTÁCTANOS</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
     <main class="main">
-      <div class="tarifas__titulo">
-        <h1>NUESTRAS TARIFAS:</h1>
-      </div>
-      <div class="tarifas__planes">
-        <div class="tarifas__planes__fitness">
+      <section class="tarifas__titulo">
+        <h1>NUESTRAS TARIFAS</h1>
+      </section>
+
+      <section class="tarifas__planes">
+        <article class="tarifas__planes__fitness">
           <h2 class="tarifas__planes__fitness__titulo">FITNESS</h2>
           <h3 class="tarifas__planes__fitness__incluye">Incluye:</h3>
           <ul class="tarifas__planes__fitness__incluye__lista">
-            <li>
-              Acceso completo a instalaciones: uso ilimitado de todas las áreas
-            </li>
+            <li>Acceso completo a instalaciones: uso ilimitado de todas las áreas</li>
             <li>App exclusiva para clientes</li>
             <li>Ingreso a todas las salas</li>
-            <li>
-              Clases grupales limitadas: Participa en una case grupal a la
-              semana
-            </li>
+            <li>Clases grupales limitadas: Participa en una clase grupal a la semana</li>
           </ul>
           <ul class="tarifas__planes__fitness__segunHorario">
             <li class="tarifas__planes__fitness__segunHorario__mañana">
               <strong>MAÑANA</strong>
               <p>Lun a Vie</p>
               <p>06:00 a 14:00</p>
-              <p>Sab/Dom/Fes</p>
-              <p>TODO EL DIA</p>
+              <p>Sáb/Dom/Fes</p>
+              <p>TODO EL DÍA</p>
             </li>
-
             <li class="tarifas__planes__fitness__segunHorario__tarde">
               <strong>TARDE</strong>
               <p>Lun a Vie</p>
               <p>14:00 a 23:00</p>
-              <p>Sab/Dom/Fes</p>
-              <p>TODO EL DIA</p>
+              <p>Sáb/Dom/Fes</p>
+              <p>TODO EL DÍA</p>
             </li>
           </ul>
           <div class="tarifas__planes__fitness__precios">
             <span class="precio70">70€</span>
             <span class="precio85">85€</span>
           </div>
-        </div>
+        </article>
 
-        <div class="tarifas__planes__performance">
+        <article class="tarifas__planes__performance">
           <h2 class="tarifas__planes__performance__titulo">PERFORMANCE</h2>
           <h3 class="tarifas__planes__performance__incluye">Incluye:</h3>
           <ul class="tarifas__planes__performance__incluye__lista">
-            <li>
-              Acceso completo a instalaciones: uso ilimitado de todas las áreas
-            </li>
+            <li>Acceso completo a instalaciones: uso ilimitado de todas las áreas</li>
             <li>App exclusiva para clientes</li>
-            <li>
-              Horario completo: acceso en cualquier horario durante el día.
-            </li>
-            <li>
-              Clases grupales ilimitadas: participación ilimitada en todas las
-              clases grupales
-            </li>
-            <li>
-              Entrenamiento personalizado: incluye 3 sesión de entrenamiento
-              personalizado al mes
-            </li>
-            <li>
-              Descuentos: 10% de descuento en productos de la tienda del
-              gimnasio
-            </li>
+            <li>Horario completo: acceso en cualquier horario durante el día</li>
+            <li>Clases grupales ilimitadas: participación ilimitada en todas las clases grupales</li>
+            <li>Entrenamiento personalizado: incluye 3 sesiones de entrenamiento personalizado al mes</li>
+            <li>Descuentos: 10% de descuento en productos de la tienda del gimnasio</li>
           </ul>
           <div class="tarifas__planes__performance__precios">
             <span class="precio100">100€</span>
           </div>
-        </div>
-        <div class="tarifas__planes__pro">
+        </article>
+
+        <article class="tarifas__planes__pro">
           <h2 class="tarifas__planes__pro__titulo">PRO</h2>
           <h3 class="tarifas__planes__pro__incluye">Incluye:</h3>
           <ul class="tarifas__planes__pro__incluye__lista">
-            <li>
-              Acceso completo a instalaciones: uso ilimitado de todas las áreas
-            </li>
+            <li>Acceso completo a instalaciones: uso ilimitado de todas las áreas</li>
             <li>App exclusiva para clientes</li>
-            <li>
-              Horario completo: acceso en cualquier horario durante el día.
-            </li>
-            <li>
-              Clases grupales ilimitadas: participación ilimitada en todas las
-              clases grupales
-            </li>
-            <li>
-              Entrenamiento personalizado: incluye 6 sesión de entrenamiento
-              personalizado al mes
-            </li>
-            <li>
-              Descuentos especiales: 20% de descuento en productos y servicios
-              adicionales, como masajes o nutrición
-            </li>
+            <li>Horario completo: acceso en cualquier horario durante el día</li>
+            <li>Clases grupales ilimitadas: participación ilimitada en todas las clases grupales</li>
+            <li>Entrenamiento personalizado: incluye 6 sesiones de entrenamiento personalizado al mes</li>
+            <li>Descuentos especiales: 20% de descuento en productos y servicios adicionales, como masajes o nutrición</li>
           </ul>
           <div class="tarifas__planes__pro__precios">
             <span class="precio140">140€</span>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <div class="tarifas__matricula">
+      <section class="tarifas__matricula">
         <h2 class="tarifas__matricula__titulo">Matrícula</h2>
         <p class="tarifas__matricula__precio">100€</p>
-        <p class="tarifas__matricula__pagoUnico">
-          *Pago único(Incluye kit inicio)
-        </p>
-      </div>
+        <p class="tarifas__matricula__pagoUnico">*Pago único (Incluye kit de inicio)</p>
+      </section>
 
-      <div class="servicios__adicionales">
-        <h3 class="servicios-adicionales__titulo">Servicios Adicionales</h3>
+      <section class="servicios__adicionales">
+        <h2 class="servicios-adicionales__titulo">Servicios Adicionales</h2>
         <ul class="servicios-adicionales__lista">
           <li class="servicio">
             <span class="servicio__nombre">Entrenamiento Personalizado:</span>
             <ul class="servicio__precio">
-              <li>Sesión única:<strong> 18€</strong></li>
-              <li>Packs de 3 sesiones:<strong> 45€</strong></li>
-              <li>Packs de 5 sesiones:<strong> 65€</strong></li>
-              <li>Packs de 10 sesiones:<strong> 100€</strong></li>
+              <li>Sesión única: <strong>18€</strong></li>
+              <li>Pack de 3 sesiones: <strong>45€</strong></li>
+              <li>Pack de 5 sesiones: <strong>65€</strong></li>
+              <li>Pack de 10 sesiones: <strong>100€</strong></li>
             </ul>
           </li>
           <li class="servicio">
-            <span class="servicio__nombre"
-              >Sesión de asesoramiento nutricional:</span
-            >
+            <span class="servicio__nombre">Sesión de asesoramiento nutricional:</span>
             <span class="servicio__precio"><strong>40€/Sesión</strong></span>
           </li>
           <li class="servicio">
@@ -228,33 +183,41 @@
             <span class="servicio__precio"><strong>10€/mes</strong></span>
           </li>
         </ul>
-      </div>
+      </section>
     </main>
+
     <footer>
-      <div class="footercontainer">
-        <div class="redesSociales">
-          <a href="https://www.facebook.com/"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/"
-            ><i class="fa-brands fa-square-instagram"></i
-          ></a>
-          <a href="https://www.tiktok.com/es/"
-            ><i class="fa-brands fa-tiktok"></i
-          ></a>
-          <a href="https://x.com/?lang=es"
-            ><i class="fa-brands fa-square-x-twitter"></i
-          ></a>
-          <a href="https://www.google.com/intl/es/gmail/about/"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-        </div>
+      <div class="footer-container">
+        <nav class="redesSociales" aria-label="Redes sociales">
+          <a href="https://www.facebook.com/" aria-label="Facebook">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Instagram">
+            <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.tiktok.com/es/" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+          </a>
+          <a href="https://x.com/?lang=es" aria-label="X (Twitter)">
+            <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.google.com/intl/es/gmail/about/" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </nav>
         <div class="copyright">
-          <h6 id="copyright">
-            © Juan Ignacio Godoy Grando / Reservados todos los derechos
-          </h6>
+          <p>
+            © 2024. Sitio web desarrollado por Juan Ignacio Godoy Grando para
+            fines educativos. Este proyecto no tiene fines comerciales.
+          </p>
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

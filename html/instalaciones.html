@@ -1,54 +1,56 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoderGym</title>
+    <title>CoderGym - Instalaciones</title>
+    <link rel="shortcut icon" href="../imagenes/Logofavicom.ico.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
 
     <link rel="stylesheet" href="../css/main.css" />
-    <meta
-      name="description"
-      content="CoderGym - Un gimnasio moderno diseñado para que logres tus metas de salud y fitness. Ofrecemos entrenamientos personalizados, equipamiento de última generación y clases grupales dinámicas. ¡Transforma tu cuerpo y mejora tu salud con nosotros!"
-    />
 
     <meta
+      name="description"
+      content="Conoce las instalaciones de CoderGym: máquinas de última generación, sauna, áreas de entrenamiento y más. Ven a vivir una experiencia única."
+    />
+    <meta
       name="keywords"
-      content="gimnasio, fitness, entrenamiento personal, clases grupales, salud, bienestar, CoderGym, ejercicios, musculación, entrenamiento funcional, gimnasio moderno, mejorar salud, transformación física"
+      content="gimnasio instalaciones, máquinas fitness, sauna, área de pesas, CoderGym"
     />
   </head>
-  <link rel="shortcut icon" href="../imagenes/Logofavicom.ico.jpg" />
+
   <body>
     <header>
-      <nav class="navbar navbar-expand-md custom-navbar-text">
+      <nav
+        class="navbar navbar-expand-md custom-navbar-text"
+        aria-label="Navegación principal"
+      >
         <div class="container-fluid">
           <button
             class="navbar-toggler order-2 order-md-1"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target=".navbar-collapse"
+            aria-controls="navbar-left navbar-right"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Abrir menú de navegación"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -59,59 +61,65 @@
           >
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="./instalaciones.html">
-                  INSTALACIONES</a
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./instalaciones.html"
+                  >INSTALACIONES</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./clasesDirigidas.html"
+                <a class="nav-link" href="./clasesDirigidas.html"
                   >CLASES DIRIGIDAS</a
                 >
               </li>
             </ul>
           </div>
 
-          <a class="navbar-brand order-1 order-md-3" href="../index.html"
-            ><img
-              src="../imagenes/logoNavCoderGym.png"
+          <a class="navbar-brand order-1 order-md-3" href="../index.html">
+            <img
+              src="../imagenes/logoNavCoderGym.svg"
               class="imagenLogoCoder"
-              alt="logoCoderGym"
-          /></a>
+              alt="Logo de CoderGym - Ir a inicio"
+            />
+          </a>
 
           <div
-            class="collapse navbar-collapse order-4 order-md 4"
+            class="collapse navbar-collapse order-4 order-md-4"
             id="navbar-right"
           >
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="./tarifas.html">TARIFAS</a>
+                <a class="nav-link" href="./tarifas.html">TARIFAS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./contactanos.html"
-                  >CONTACTANOS</a
-                >
+                <a class="nav-link" href="./contactanos.html">CONTÁCTANOS</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
     <main>
-      <h2 class="nuestras__instalaciones">Nuestras instalaciones</h2>
-      <h3 class="nuestras__instalaciones__h3">
-        Conoce nuestras instalaciones y animate a vivir una experiencia unica
-      </h3>
-      <div class="video__instalaciones">
+      <section class="instalaciones-hero">
+        <h1 class="nuestras__instalaciones">Nuestras instalaciones</h1>
+        <p class="nuestras__instalaciones__h3">
+          Conoce nuestras instalaciones y anímate a vivir una experiencia única
+        </p>
+      </section>
+
+      <section class="video__instalaciones">
         <iframe
-          width="1088"
           src="https://www.youtube.com/embed/mBY68kFvhq8"
-          title="Flex Fitness Cambridge Gym Tour - Life Fitness NZ"
+          title="Tour virtual por las instalaciones de CoderGym"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-      </div>
-      <div class="instalaciones">
+      </section>
+
+      <section class="instalaciones">
         <div class="instalacionesExplicacion">
           <p class="instalacionesTexto">
             En CoderGym, nos enorgullecemos de ofrecerte un entorno de
@@ -120,9 +128,10 @@
             equipadas con lo último en tecnología y comodidad, lo que garantiza
             que tu experiencia sea única y motivadora.
           </p>
+
           <ul class="listaIntsalaciones">
             <li>
-              <strong>Máquinas de Alto Nivel:</strong>
+              <strong>Máquinas de Alto Nivel</strong>
               <p>
                 Nuestro gimnasio cuenta con un amplio surtido de máquinas de
                 cardio y fuerza de alta gama. Desde bicicletas estáticas y
@@ -132,7 +141,7 @@
               </p>
             </li>
             <li>
-              <strong>Sauna:</strong>
+              <strong>Sauna</strong>
               <p>
                 Después de un intenso entrenamiento, relájate en nuestra sauna.
                 Este espacio está diseñado para aliviar la tensión muscular,
@@ -142,7 +151,7 @@
               </p>
             </li>
             <li>
-              <strong>Amplias Áreas de Entrenamiento:</strong>
+              <strong>Amplias Áreas de Entrenamiento</strong>
               <p>
                 Nuestras instalaciones incluyen zonas dedicadas tanto al
                 entrenamiento con pesas libres como a clases grupales. Desde
@@ -152,7 +161,7 @@
               </p>
             </li>
             <li>
-              <strong>Vestuarios Completos:</strong>
+              <strong>Vestuarios Completos</strong>
               <p>
                 Nuestros vestuarios están limpios, bien equipados y diseñados
                 para tu comodidad. Cuentan con duchas privadas, secadores de
@@ -161,7 +170,7 @@
               </p>
             </li>
             <li>
-              <strong>Servicios de Toallas:</strong>
+              <strong>Servicios de Toallas</strong>
               <p>
                 Para mayor comodidad, ofrecemos toallas tanto para las máquinas
                 como para las duchas, para que no tengas que preocuparte por
@@ -169,7 +178,7 @@
               </p>
             </li>
             <li>
-              <strong>Espacios de Descanso:</strong>
+              <strong>Espacios de Descanso</strong>
               <p>
                 Después de tu sesión, relájate en nuestras áreas de descanso.
                 Equipadas con cómodos asientos y un ambiente tranquilo, son
@@ -177,9 +186,8 @@
                 tranquilidad.
               </p>
             </li>
-
             <li>
-              <strong>Ambiente Motivador:</strong>
+              <strong>Ambiente Motivador</strong>
               <p>
                 En CoderGym, creemos que un ambiente positivo y motivador es
                 clave para el éxito. Nuestra comunidad de entrenadores y
@@ -188,6 +196,7 @@
               </p>
             </li>
           </ul>
+
           <p class="instalacionesTexto">
             En CoderGym, nos comprometemos a proporcionarte un ambiente de
             entrenamiento de primera clase, donde podrás mejorar tu bienestar
@@ -196,102 +205,115 @@
             metas!
           </p>
         </div>
-      </div>
+      </section>
 
-      <h3 class="galeria__titulo">Galería</h3>
-      <div class="galeria__fotos">
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/1.jpg"
-          alt="Instalación 1"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/2.jpg"
-          alt="Instalación 2"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/3.jpg"
-          alt="Instalación 3"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/4.jpg"
-          alt="Instalación 4"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/5.jpeg"
-          alt="Instalación 5"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/6.jpg"
-          alt="Instalación 6"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/7.jpg"
-          alt="Instalación 7"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/8.jpg"
-          alt="Instalación 8"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/9.jpg"
-          alt="Instalación 9"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/10.jpg"
-          alt="Instalación 10"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/11.jpeg"
-          alt="Instalación 11"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/12.jpeg"
-          alt="Instalación 12"
-        />
-        <img
-          class="fotos__instalaciones"
-          src="../imagenes/instalaciones/13.jpg"
-          alt="Instalación 13"
-        />
-      </div>
-    </main>
-    <footer>
-      <div class="footercontainer">
-        <div class="redesSociales">
-          <a href="https://www.facebook.com/"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/"
-            ><i class="fa-brands fa-square-instagram"></i
-          ></a>
-          <a href="https://www.tiktok.com/es/"
-            ><i class="fa-brands fa-tiktok"></i
-          ></a>
-          <a href="https://x.com/?lang=es"
-            ><i class="fa-brands fa-square-x-twitter"></i
-          ></a>
-          <a href="https://www.google.com/intl/es/gmail/about/"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+      <section class="galeria">
+        <h2 class="galeria__titulo">Galería</h2>
+        <div class="galeria__fotos">
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/1.jpg"
+            alt="Área de máquinas de cardio"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/2.jpg"
+            alt="Zona de pesas libres"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/3.jpg"
+            alt="Sala de clases grupales"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/4.jpg"
+            alt="Equipamiento de musculación"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/5.jpeg"
+            alt="Área de estiramiento"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/6.jpg"
+            alt="Recepción del gimnasio"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/7.jpg"
+            alt="Zona de entrenamiento funcional"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/8.jpg"
+            alt="Vestuarios"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/9.jpg"
+            alt="Sauna"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/10.jpg"
+            alt="Área de descanso"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/11.jpeg"
+            alt="Máquinas de última generación"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/12.jpeg"
+            alt="Espacio de entrenamiento personal"
+          />
+          <img
+            class="fotos__instalaciones"
+            src="../imagenes/instalaciones/13.jpg"
+            alt="Vista general del gimnasio"
+          />
         </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <nav class="redesSociales" aria-label="Redes sociales">
+          <a href="https://www.facebook.com/" aria-label="Facebook">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Instagram">
+            <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.tiktok.com/es/" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+          </a>
+          <a href="https://x.com/?lang=es" aria-label="X (Twitter)">
+            <i class="fa-brands fa-square-x-twitter" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://www.google.com/intl/es/gmail/about/"
+            aria-label="Email"
+          >
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </nav>
         <div class="copyright">
-          <h6 id="copyright">
-            © 2024. Sitio web desarrollado por Juan Ignacio Godoy Grando para fines educativos. Este proyecto no tiene fines comerciales.
-          </h6>
+          <p>
+            © 2024. Sitio web desarrollado por Juan Ignacio Godoy Grando para
+            fines educativos. Este proyecto no tiene fines comerciales.
+          </p>
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

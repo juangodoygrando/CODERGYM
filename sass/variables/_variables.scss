@@ -1,9 +1,15 @@
-/* COLORES */
-    $colorNavFooter: rgb(0, 139, 139);
-    $colorBody:rgb(238, 238, 238);
-    $colorFondoLetras:rgb(44, 62, 80);
-    $boxSahdowImagenes:5px 5px 10px $colorNavFooter
-    
-    
 
-  
+$colorNavFooter: rgb(0, 139, 139);
+$colorBody: rgb(238, 238, 238);
+$colorFondoLetras: rgb(44, 62, 80);
+$boxSahdowImagenes: 5px 5px 10px $colorNavFooter;
+
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+
+$img-max-height-mobile: 250px;
+$img-max-height-tablet: 350px;
+$img-max-height-desktop: 450px;
